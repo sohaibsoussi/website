@@ -1,0 +1,480 @@
+:root{
+    --blue:#139cf7;
+    --greenC:#9ECC45;
+    --greenF:#6E9F58;
+    --greenFA:#bbbbbbd6;
+    --gray:#DCDCDC;
+    --gray2:#bbbbbb;
+    --white:white;
+    --dark:#002233;
+    --interesting:rgb(182, 182, 182);
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+    /*font-family: 'IBM Plex Serif', serif;*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+::-webkit-scrollbar {
+    width:7px;
+    height:7px;
+}
+::-webkit-scrollbar-track {
+    background: linear-gradient(
+    90deg,#434343,#434343 1px,#111 0,#111);
+}   
+::-webkit-scrollbar-thumb {
+    background:var(--dark);  
+    border-radius:16px;
+    box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%),
+                inset -2px -2px 2px rgb(0 0 0 / 25%);
+}
+::-webkit-scrollbar-thumb:hover {
+    background:var(--greenF);
+}
+body{
+    background:var(--gray);
+    position: relative;
+}
+
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+}
+
+.firstSection{
+    background:linear-gradient(
+        rgba(0, 0, 0, 0.363), 
+        rgba(0, 0, 0, 0.333)
+      ),url(../assets/young-child-psychologist-talking-with-sad-little-girl-in-the-office.webp) no-repeat top/cover;
+    color: var(--white);
+    position: relative;
+}
+
+.firstVue {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.t1,.t2 {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+.txt {
+    white-space: nowrap;
+    font-size: 150px;
+    font-family: 'IBM Plex Serif', serif;
+    text-shadow: 0 10px 10px #43434368;
+    animation: scrollTxt 14s 1.5s linear infinite reverse;
+}
+
+@keyframes scrollTxt {
+    0%{
+        transform:translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.secondSection{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction:column;
+    height:100%;
+    overflow: hidden;
+}
+
+.secondSection .apropos .title{
+    margin: 20px 0;
+    font-size: 30px;
+    color: var(--greenF);
+}
+
+.secondSection .apropos{
+    position: relative;
+    overflow: hidden;
+}
+.ligne1{
+    background-color: var(--gray);
+    width: 100%;
+    height:1px;
+    z-index: 1000;
+}
+
+.ligne2, .ligne3{
+    margin:10px;
+    background-color: var(--gray2);
+    width: inherit;
+    height: 1px;
+    z-index: inherit;
+}
+
+.secondSection .what{
+    position: relative;
+    overflow: hidden;
+}
+
+.secondSection .what .title2{
+    margin: 15px 0 25px 0;
+    font-size: 30px;
+    color: var(--greenF);
+}
+
+.secondSection .apropos .intro{
+    word-spacing: 2px;
+    text-align: justify;
+    font-size: 17px;
+    line-height: 37px;
+    max-width: 1000px;
+    z-index: 1000;
+}
+
+.secondSection .what .intro2{
+    word-spacing: 2px;
+    text-align: justify;
+    font-size: 17px;
+    line-height: 37px;
+    max-width: 1000px;
+    z-index: 1000;
+}
+
+.secondSection .what .icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(150%, -53%);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.secondSection .what .icon ion-icon{
+    font-size: 200px;
+    color: var(--greenFA);
+}
+
+.secondSection .apropos .icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(150%, -40%);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.secondSection .apropos .icon ion-icon{
+    font-size: 200px;
+    color: var(--greenFA);
+}
+
+.articles{
+    background-color: var(--gray1);
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container3{
+   margin: 35px 0;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   height: 350px;
+   width: 100%; 
+}
+.art{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 54px 86px;
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    position: relative;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.art p{
+    position: absolute;
+    color: aliceblue;
+    font-size: 35px;
+    top: 298px;
+    left: 5%;
+}
+.art a{
+    text-decoration: none;
+    position: absolute;
+    top: 307px;
+    padding: 2px 12px;
+    right: 5%;
+    background-color:#5d844b88;
+    color: aliceblue;
+    border: 1px solid transparent;
+    font-size: 20px;
+    border-radius: 30px;
+}
+.art1{
+    background:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(../assets/autisme.webp) no-repeat center;
+    background-size: 160%;
+}
+.art2{
+    background:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(../assets/integration_sensorielle_une.webp) no-repeat center;
+    background-size: 160%;
+}
+.art3{
+    background:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(../assets/screen.webp) no-repeat center;
+    background-size: 160%;
+}
+.art4{
+    background:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(../assets/tdha.webp) no-repeat center;
+    background-size: 160%;
+}
+.art5{
+    background:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(../assets/violance.webp) no-repeat center;
+    background-size: 160%;
+}
+.art6{
+    background:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(../assets/self\ harm.webp) no-repeat center;
+    background-size: 160%;
+}
+.art:hover{
+    width: 400px;
+    background-position: center;
+    background-size: 170%;
+}
+.circleField{
+    position: relative;
+    overflow: hidden;
+}
+
+.contactMe{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba(26, 132, 73, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-bottom: 80px;
+}
+.txt2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.ptxt{
+    margin-bottom: 61px;
+    font-size: 33px;
+}
+.ptxt2{
+    font-size: 20px;
+    color: var(--greenF);
+}
+.pcol{
+    color: #222222;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.input1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 35px;
+}
+input:nth-child(1){
+    width: 404px;
+    height: 24px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+input:nth-child(2){
+    width: 404px;
+    height: 24px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+input:nth-child(3){
+    width: 404px;
+    height: 24px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+.button{
+    padding: 6px 33px;
+    border-radius: 100px;
+    background-color: var(--greenF);
+    color: white;
+    border: 1px solid transparent;
+    margin-bottom: 37px;
+    cursor: pointer;
+    transition: all 0.7s ease-in-out;
+}
+.button:hover{
+    color: #002233;
+    background-color: rgba(6, 132, 23, 0.18);
+    border-radius: 60px;
+    border: 1px solid var(--greenC);
+}
+textarea{
+    width: 404px;
+    height: 118px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    resize: none;
+    border: 1px solid rgba(0, 142, 57, 0.826);
+}
+.caret{
+    caret-color: #14762b;
+}
+.toggle {
+    display: none;
+}
+
+
+@media  only screen and  (max-width:991px){
+    ul.navigation {
+        display: none;
+    }
+    .toggle{
+        display: block;
+        position: fixed;
+        margin-top: 5px;
+        top: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url(./menu.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1000;
+	}
+    .toggle.active {
+        display: block;
+        position: fixed;
+        right: 20px;
+        top: 10px;
+        width: 30px;
+        background: url(./close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 30px;
+        background-size: cover;
+    }
+    header ul li {
+        list-style: none;
+        transition: 0.75s ease border-bottom;
+        position: relative;
+        z-index: 1000;
+        overflow: hidden;
+    }
+
+    header ul.navigation2.active {
+        right: 61%;
+    }
+    .firstSection{
+        height: 30vh;
+    }
+    .firstVue {
+        top: 49%;
+    }
+    .txt {
+        font-size: 73px;
+        animation: scrollTxt 8s 1.5s linear infinite reverse;
+    }
+    .secondSection {
+        text-align: center;
+    }
+    .secondSection .apropos .title {
+        text-align: initial;
+    }
+    .secondSection .what .title2 {
+        font-size: 29px;
+        text-align: initial;
+    }
+    .secondSection .apropos .intro {
+        word-spacing: normal;
+        max-width: 338px;
+        line-height: 32px;
+        text-align: left;
+    }
+    .secondSection .what {
+        word-spacing: normal;
+        max-width: 338px;
+        text-align: left;
+    }
+    .secondSection .what .intro2 {
+        word-spacing: normal;
+        line-height: 32px;
+        text-align: left;
+    }
+    .secondSection .apropos .icon {
+        left: -44%;
+    }
+    .secondSection .what .icon{
+        left: -44%;
+    }
+    .container3 {
+        margin: 0;
+        flex-direction: column;
+        height: 929px;
+    }
+    .contactMe {
+        width: 90%;
+    }
+    .ptxt {
+        font-size: 27px;
+    }
+    .input1 {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 35px;
+    }
+    input:nth-child(1){
+        width: 322px;
+    }
+    input:nth-child(2){
+        width: 322px;
+    }
+    input:nth-child(3){
+        width: 322px;
+    }
+    textarea{
+        width: 322px;
+    }
+    
+}
