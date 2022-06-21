@@ -147,6 +147,7 @@ section{
     font-size: 17px;
     line-height: 37px;
     max-width: 1000px;
+    margin: 0 0 20px 0;
     z-index: 1000;
 }
 
@@ -213,22 +214,27 @@ section{
 }
 .art p{
     position: absolute;
-    color: aliceblue;
-    font-size: 35px;
-    top: 298px;
-    left: 5%;
+    color: rgb(255, 255, 255);
+    background-color:#5d844b88;
+    padding:2px 4px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 30px;
+    top: 0px;
+    left:0;
 }
 .art a{
     text-decoration: none;
     position: absolute;
-    top: 307px;
-    padding: 2px 12px;
-    right: 5%;
+    bottom:0;
+    padding:2px 4px;
+    right: 0%;
     background-color:#5d844b88;
     color: aliceblue;
     border: 1px solid transparent;
-    font-size: 20px;
-    border-radius: 30px;
+    font-size: 30px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 .art1{
     background:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(../assets/autisme.webp) no-repeat center;
@@ -400,9 +406,10 @@ textarea{
         z-index: 1000;
         overflow: hidden;
     }
-
+   
     header ul.navigation2.active {
-        right: 61%;
+        right: 55%;
+        
     }
     .firstSection{
         height: 30vh;
