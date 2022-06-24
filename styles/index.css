@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400&family=Roboto:wght@100;400&family=Sacramento&display=swap');
 :root{
     --blue:#139cf7;
     --greenC:#9ECC45;
     --greenF:#6E9F58;
-    --greenFA:#bbbbbbd6;
-    --gray:#DCDCDC;
-    --gray2:#bbbbbb;
+    --greenFA:#fffffff0;
+    --gray:#ffffff;
+    --gray2:#ffffff;
     --white:white;
     --dark:#002233;
     --interesting:rgb(182, 182, 182);
@@ -48,49 +49,11 @@ section{
     width: 100%;
 }
 
-.firstSection{
-    background:linear-gradient(
-        rgba(0, 0, 0, 0.363), 
-        rgba(0, 0, 0, 0.333)
-      ),url(../assets/young-child-psychologist-talking-with-sad-little-girl-in-the-office.webp) no-repeat top/cover;
-    color: var(--white);
-    position: relative;
-}
-
-.firstVue {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
-}
-
-.t1,.t2 {
-    color: transparent;
-    -webkit-text-stroke: 1px white;
-}
-
-.txt {
-    white-space: nowrap;
-    font-size: 150px;
-    font-family: 'IBM Plex Serif', serif;
-    text-shadow: 0 10px 10px #43434368;
-    animation: scrollTxt 14s 1.5s linear infinite reverse;
-}
-
-@keyframes scrollTxt {
-    0%{
-        transform:translateX(-100%);
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
 
 .secondSection{
     display: flex;
     justify-content: flex-start;
+    padding-top: 0px;
     flex-direction:column;
     height:100%;
     overflow: hidden;
@@ -257,7 +220,7 @@ section{
     background-size: 160%;
 }
 .art6{
-    background:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(../assets/self\ harm.webp) no-repeat center;
+    background:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(../assets/harm.webp) no-repeat center;
     background-size: 160%;
 }
 .art:hover{
@@ -366,8 +329,37 @@ textarea{
 .toggle {
     display: none;
 }
+.photocit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-
+}
+.photocit .photo{
+    width: 325px;
+    border-radius: 13px;
+    margin: 21px 0;
+}
+.photocit .photo img{
+    width: 325px;
+    border-radius: 13px;
+    border: solid 1px #2222;
+    margin: 21px 0;
+}
+.photocit .cit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.photocit .cit p{
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 60px;
+}
 @media  only screen and  (max-width:991px){
     ul.navigation {
         display: none;
@@ -380,6 +372,7 @@ textarea{
         right: 10px;
         width: 30px;
         height: 30px;
+        filter: invert(1);
         cursor: pointer;
         background: url(./menu.png);
         background-size: cover;
@@ -393,6 +386,7 @@ textarea{
         right: 20px;
         top: 10px;
         width: 30px;
+        filter: invert(1);
         background: url(./close.png);
         background-position: center;
         background-repeat: no-repeat;
