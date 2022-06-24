@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./styles/index.css">
-    
     <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/slider.css">
+    <link rel="stylesheet" href="./styles/afterFooter.css">
     <link rel="stylesheet" href="./styles/footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +17,9 @@
     <link rel="icon" href="./assets/logo-modified.png" type="image/png">
 
     <title>Document</title>
+    <style>
+        
+    </style>
 </head>
 <body>
     <header>
@@ -37,7 +41,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#footer" style="color:#ffffff;">Contact</a>
+                    <a href="#footer" >Contact</a>
                 </li>
             </ul>
             <ul class="navigation2">
@@ -52,12 +56,49 @@
         <div class="toggle" onclick="toggleMenu()"></div>
         <script src="./Js/header.js"></script>
     </header>
-    <section class="firstSection">
-        <div class="firstVue">
-            <span class="txt t1">Besoin De Consulter Un <span style="color: aliceblue;">Pédopsychiatre</span> &nbsp;</span>
-            <span class="txt t2">Besoin De Consulter Un <span style="color: aliceblue;">Pédopsychiatre</span> &nbsp;</span>
+
+    <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="./assets/pic1.webp" style="width:100% ;">
         </div>
-    </section>
+      
+        <div class="mySlides fade">
+          <img src="./assets/pic2.webp" style="width:100% ">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="./assets/pic3.webp" style="width:100%">
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
         
     <section class="secondSection">
         <div class="apropos">
@@ -79,26 +120,14 @@
             </div>
             <div class="ligne2"></div>
         </div>
-        <div class="apropos" id="Addictologie">
-            <p class="title">
-                Addictologie :
-            </p>
-            <div class="ligne2"></div>
-            <div class="intro">
-                <p>L&rsquo;addictologie est la sp&eacute;cialit&eacute; de la m&eacute;decine consacr&eacute;e &agrave; l&rsquo;&eacute;tude et la prise en charge des addictions, c'est-&agrave;-dire des d&eacute;pendances &agrave; des produits (alcool, drogues, tabac, alimentation),&nbsp; et des d&eacute;pendances &laquo;&nbsp;sans produit&nbsp;&raquo;: jeux d&rsquo;argent, de hasard, pratiques sexuelles, jeux vid&eacute;os, achat compulsif, cyberaddiction&hellip;</p>
-                <p>Autant que addictologue, je re&ccedil;ois toutes personnes (enfants, adolescents, adultes) pr&eacute;sentant des probl&egrave;mes de d&eacute;pendance vis-&agrave;-vis d&rsquo;une substance, licite ou non, ou d&rsquo;un comportement.</p>
-                <p>Mon r&ocirc;le consiste &agrave; pr&eacute;venir, &eacute;valuer mais aussi traiter et assurer le suivi des personnes pr&eacute;sentant des addictions, je propose:</p>
-                <ul>
-                    <li>une &eacute;coute</li>
-                    <li>une &eacute;valuation et un accompagnement m&eacute;dical, psychologique, socio-&eacute;ducatif</li>
-                    <li>une orientation vers des &eacute;tablissements sp&eacute;cialis&eacute;s pour un sevrage ou des soins particuliers, au besoin .</li>
-                </ul>
-                <p>&nbsp;</p>
+        <div class="photocit">
+            <div class="photo">
+                <img src="./assets/Removed.png" alt="">
             </div>
-            <div class="icon">
-                <ion-icon name="wine-outline"></ion-icon>
+            <div class="cit">
+                <p>Un voyage de mille lieues commence toujours par un premier pas</p>
+                <p style="text-align:end;">Lao-Tzu</p>
             </div>
-            <div class="ligne2"></div>
         </div>
         <div class="what" id="what">
             <p class="title2">
@@ -157,68 +186,14 @@
             </div>
         </div>
     </section>
-    <section class="secondSection circleField ">
-        <div class="txt2">
-            <p class="ptxt">Vous souhaitez avoir plus de renseignement ?</p>
-        </div>
-
-        <form method="post" action="https://sheetdb.io/api/v1/bzuk2835tkbvx" id="sheetdb-form" class="contactMe">
-
-          <div class="input1">
-              <p class="ptxt2">Votre nom</p>
-              <input class="caret" name="data[name]" type="text" required >
-          </div>
-          <div class="input1">
-              <p class="ptxt2">Votre e-mail</p>
-              <input class="caret" name="data[email]" type="email" required>
-          </div>
-          <div class="input1">
-              <p class="ptxt2">Sujet</p>
-              <input class="caret" name="data[topic]" type="text" required>
-          </div>
-          <div class="input1">
-              <p class="ptxt2">Votre message</p>
-              <textarea class="caret" name="data[description]" required minlength="20" lang="fr"></textarea>
-          </div>
-          <input type="submit" name="" class="button" value="Envoyer"class="g-recaptcha" 
-          data-sitekey="6Ld7jX8gAAAAAMq3KHR7KvLSKYvGTQqoElmPqR4P" 
-          data-callback='onSubmit' 
-          data-action='submit'>
-        </form>
-        <script>
-            var form = document.getElementById('sheetdb-form');
-            form.addEventListener("submit",e =>{
-              e.preventDefault();
-              fetch(form.action, {
-                method:'POST',
-                body: new FormData(document.getElementById("sheetdb-form")),
-              }).then(
-                response => response.json()
-              ).then((html) =>{
-                alert("votre message est bien reçu 😄")
-                window.open('./index.html','_self');
-                
-              });
-          });
-        </script>
-        <script src="https://www.google.com/recaptcha/api.js"></script>
-        <script>
-         function onSubmit(token) {
-           document.getElementById("sheetdb-form").submit();
-         }
-       </script>
-       <script src="https://www.google.com/recaptcha/api.js?render=6Ld7jX8gAAAAAMq3KHR7KvLSKYvGTQqoElmPqR4P"></script>
-       <script>
-         function onClick(e) {
-           e.preventDefault();
-           grecaptcha.ready(function() {
-             grecaptcha.execute('6Ld7jX8gAAAAAMq3KHR7KvLSKYvGTQqoElmPqR4P', {action: 'submit'}).then(function(token) {
-                 // Add your logic to submit to your backend server here.
-             });
-           });
-         }
-     </script>
-</section>
+    <div class="after-footer">
+        <div class="imgAndText"><img src="./assets/analyses-daudience-internet.png" alt=""><p>Analyse</p></div>
+        <div class="imgAndText"><img src="./assets/bienveillance.png" alt=""><p>Bienveillance</p></div>
+        <div class="imgAndText"><img src="./assets/ponctualite.png" alt=""><p>Ponctualité</p></div>
+        <div class="imgAndText"><img src="./assets/la-communication.png" alt=""><p>Communication</p></div>
+        <div class="imgAndText"><img src="./assets/ecoutez.png" alt=""><p>Écoute</p></div>
+        <div class="imgAndText"><img src="./assets/767401.png" alt=""><p>soutien</p></div>
+    </div>
     <footer id="footer">
         <div class="container">
             <div class="container2">
