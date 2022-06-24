@@ -3,8 +3,8 @@
     --greenC:#9ECC45;
     --greenF:#6E9F58;
     --greenFA:#bbbbbbd6;
-    --gray:#DCDCDC;
-    --gray2:#bbbbbb;
+    --gray:#ffffff;
+    --gray2:#ffffff;
     --white:white;
     --dark:#002233;
     --interesting:rgb(182, 182, 182);
@@ -44,6 +44,11 @@ footer{
 .iconBox a ion-icon {
     font-size: 36px;
     color: #bbbbbb;
+    opacity: 0.7;
+    transition: all 0.25s ease-in-out;
+}
+.iconBox a ion-icon:hover{
+    opacity: 1;
 }
 
 .map{
