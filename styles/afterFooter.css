@@ -1,13 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
-.after-footer{
+.lastContainer {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(45deg, #6f9f58a0 23.08%, #ffffff 23.08%, #ffffff 50%, #6f9f58a0 50%, #6f9f58a0 73.08%, #ffffff 73.08%, #ffffff 100%);
+    background-size: 73.54px 73.54px;
+}
+.lastContainer p{
     font-family: 'Pacifico', cursive;
+    margin: auto;
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 10px;
+}
+.after-footer{
     padding: 20px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(45deg, #6f9f58a0 23.08%, #ffffff 23.08%, #ffffff 50%, #6f9f58a0 50%, #6f9f58a0 73.08%, #ffffff 73.08%, #ffffff 100%);
-    background-size: 73.54px 73.54px;
 }
 .after-footer .imgAndText{
     display: flex;
@@ -25,6 +34,11 @@
     font-family: 'Pacifico', cursive;
 }
 @media only screen and (max-width: 991px){
+    .lastContainer p {
+        font-family: 'Pacifico', cursive;
+        font-size: 3.3rem;
+        padding-top: 10px;
+    }
     .after-footer{
         display: flex;
         justify-content:center;
