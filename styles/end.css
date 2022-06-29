@@ -1,0 +1,61 @@
+.boutton2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 300px;
+    width: 100%;
+    background: #16656c;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    text-decoration: none;
+}
+.boutton2 .title2{
+    font-size:1.5rem;
+    font-weight: 700;
+    z-index: 1;
+}
+.btn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    padding: 13px 34px;
+    background: #e0e0e0;
+    box-shadow: inset 24px -24px 48px #6e9f58, inset -24px 24px 48px #9ecc45;
+    margin-top: 34px;
+    z-index: 1;
+    text-decoration: none;
+    border: transparent 2px solid;
+    transition: all 0.5s ease-in-out;
+}
+.btn2 ion-icon{
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn2 p{
+    font-weight: bold;
+    margin-left:10px;
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+}
+#visual{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+}
+.btn2:hover{
+    background: #acc38c;
+    box-shadow: inset 24px -24px 48px #16656c, inset -24px 24px 48px #106161;
+    border: #000000 2px solid;
+    
+}
+.btn2:hover.btn2 p,.btn2:hover.btn2 ion-icon{
+    color: #000000;
+}
