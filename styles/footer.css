@@ -92,6 +92,7 @@ footer{
     }
     .iconBox {
         margin-top: 28px;
+        width: 84%;
     }
     .container, .container2 {
         display: flex;
