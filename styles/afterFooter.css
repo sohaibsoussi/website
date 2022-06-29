@@ -2,8 +2,6 @@
 .lastContainer {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(45deg, #6f9f58a0 23.08%, #ffffff 23.08%, #ffffff 50%, #6f9f58a0 50%, #6f9f58a0 73.08%, #ffffff 73.08%, #ffffff 100%);
-    background-size: 73.54px 73.54px;
 }
 .lastContainer p{
     font-family: 'Pacifico', cursive;
@@ -28,6 +26,7 @@
     width: 80px;
     height: 80px;
     margin-bottom: 10px;
+    filter: drop-shadow(2px 4px 6px black);
 }
 .after-footer .imgAndText p{
     font-size: 1.5rem;
