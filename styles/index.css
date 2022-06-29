@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400&family=Roboto:wght@100;400&family=Sacramento&display=swap');
+
 :root{
     --blue:#139cf7;
     --greenC:#9ECC45;
@@ -97,7 +98,7 @@ section{
 
 .secondSection .apropos .intro{
     word-spacing: 2px;
-    text-align: justify;
+    text-align: justify; 
     font-size: 17px;
     line-height: 37px;
     max-width: 1000px;
@@ -132,7 +133,7 @@ section{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(150%, -40%);
+    transform: translate(150%, -53%);
     opacity: 0.5;
     z-index: -1;
 }
@@ -346,6 +347,7 @@ textarea{
     border-radius: 13px;
     border: solid 1px #2222;
     margin: 21px 0;
+    filter: drop-shadow(2px 4px 6px black);
 }
 .photocit .cit{
     display: flex;
@@ -419,22 +421,24 @@ textarea{
         text-align: center;
     }
     .secondSection .apropos .title {
-        text-align: initial;
+        text-align: center;
     }
     .secondSection .what .title2 {
         font-size: 29px;
-        text-align: initial;
+        text-align: justify;
     }
     .secondSection .apropos .intro {
         word-spacing: normal;
-        max-width: 338px;
+        max-width: 90%;
+        margin: auto;
         line-height: 32px;
-        text-align: left;
+        text-align: justify;
     }
     .secondSection .what {
         word-spacing: normal;
-        max-width: 338px;
-        text-align: left;
+        max-width: 90%;
+        margin: auto;
+        text-align: justify;
     }
     .secondSection .what .intro2 {
         word-spacing: normal;
