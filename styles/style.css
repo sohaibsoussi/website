@@ -13,6 +13,9 @@ section {
     margin: 65px 30px;
     max-width: 886px;
 }
+.firstSection h1{
+    font-size: 3.5rem;
+}
 strong {
     display: table;
     margin: 0%;
@@ -37,6 +40,7 @@ width: 30px;
 height: 30px;
 cursor: pointer;
 background: url(./menu.png);
+filter: invert(1);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -49,6 +53,7 @@ right: 20px;
 top: 10px;
 width: 30px;
 background: url(./close.png);
+filter: invert(1);
 background-position: center;
 background-repeat: no-repeat;
 height: 30px;
@@ -63,10 +68,13 @@ overflow: hidden;
 }
 
 header ul.navigation2.active {
-right: 61%;
+    right: 55%;
 }
 .firstSection{
 height: 30vh;
+}
+.firstSection h1{
+    font-size: 1.5rem;
 }
 .firstVue {
 top: 49%;
