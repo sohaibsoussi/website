@@ -2,7 +2,7 @@
     --blue:#47A6E5;
     --greenC:#9ECC45;
     --greenF:#6E9F58;
-    --greenFA:#fffffff0;
+    --greenFA:#bbbbbbd6;
     --gray:#ffffff;
     --gray2:#ffffff;
     --white:white;
@@ -33,10 +33,11 @@ header ul{
 header ul li{
     list-style:none;
     width: 200px;
+    margin: 11px 0px;
 }
 
 header ul li a{
-    color: var(--white);
+    color: var(--dark);
     display: inline-block;
     margin: 0px 25px 7px 0;
     text-decoration: none;
@@ -86,6 +87,12 @@ ul li:hover .list1{
     color: #ffffff;
 }
 @media  only screen and  (max-width:991px){
-header ul li a{
+    header{
+        justify-content:center;
+    }
+    header a img{
+        max-width: 5.3rem;
+    }
+    header ul li a{
     font-size: 22px;
 }}
