@@ -8,50 +8,34 @@ body {
 }
 .mySlides {
     display: none;
+    position: relative;
 }
 .fade img{
     vertical-align: middle;
-    height: 76vh;
-    object-fit: cover;
+    height: 56vh;
+    object-fit:contain ;
     border-radius: 5px;
-    filter: brightness(0.7);
+    filter: brightness(0.4);
     opacity: 0.8;
 }
 
 /* Slideshow container */
 .slideshow-container {
-    width: 98%;
     position: relative;
-    margin: 90px 10px 5px 10px;
+    margin-top: 90px;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
+.text {
+    color: #ffffff;
+    border-radius: 9px;
+    font-size: 2.4rem;
+    padding: 8px 12px;
     position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: rgb(204, 204, 204);
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-    background-color: rgba(151, 151, 151, 0.685);
-}
-
+    bottom: 26%;
+    right: 30%;
+    width: 26%;
+    text-align: left;
+  }
 /* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
@@ -64,16 +48,12 @@ body {
     transition: background-color 0.6s ease;
 }
 
-.dot:hover {
-    background-color:#71d145de;
-}
-
 /* Fading animation */
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 2.5s;
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 2.5s;
 }
 
 @-webkit-keyframes fade {
@@ -89,15 +69,17 @@ body {
 @media all and (max-width:991px){
     .fade img {
         vertical-align: middle;
-        height: 472px;
-        object-fit: cover;
+        height: 293px;
+        object-fit: contain;
         border-radius: 20px;
-        filter: brightness(0.7);
-        padding: 13px;
+        filter: brightness(0.4);
+        padding:0 13px;
     }
     .text { 
-        font-size: 28px;
+        font-size: 1.1rem;
         padding: 0px 12px;
+        width: 45%;
+        right: 9%;
     }
     .prev, .next {
         font-size: 9px;
