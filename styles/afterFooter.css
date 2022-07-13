@@ -7,8 +7,12 @@
     font-family: 'Pacifico', cursive;
     margin: auto;
     text-align: center;
-    font-size: 2.3rem;
+    font-size: 30px;
     padding: 10px;
+}
+.lastContainer .title{
+    color: #6E9F58;
+    display: block;
 }
 .after-footer{
     padding: 20px 0;
@@ -35,7 +39,7 @@
 @media only screen and (max-width: 991px){
     .lastContainer p {
         font-family: 'Pacifico', cursive;
-        font-size: 3.3rem;
+        font-size: 2rem;
         padding-top: 10px;
     }
     .after-footer{
@@ -44,6 +48,7 @@
         align-items: center;
         flex-direction: column;
     }
+    
     .after-footer .imgAndText {
         display: flex;
         align-items: center;
