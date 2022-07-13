@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/fix.css">
+        <link rel="stylesheet" href="../styles/footer.css">
+        <link rel="stylesheet" href="../styles/end.css">
+        
+        <style>
+            *{
+               margin: 0;
+               padding: 0%;
+               box-sizing: border-box;
+               scroll-behavior: smooth;
+               font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           }
+           body{
+               background-color: #ffffff;
+           }
+           
+           section {
+               margin: 65px 30px;
+               max-width: 886px;
+               /* display: flex; */
+               /* justify-content: center; */
+               /* align-items: center; */
+               flex-direction: column;
+               margin-left: 25%;
+               margin-top: 99px;
+           }
+           strong {
+               display: table;
+               margin: 0%;
+           }
+           a{
+               color: #47A6E5;
+           }
+           header ul li a {
+               color: #ffffff;
+               border: white 2px solid;
+               padding: 1px 12px;
+               border-radius: 151px;
+               background: #0b697347;
+           }
+           ul{
+            margin-left: 21px;
+           }
+           b,strong,h3,h2{
+               color: #83B041;
+           }
+           .firstSection {
+               
+               height: 100vh;
+               width: 100%;
+               background: linear-gradient( rgba(0, 0, 0,85%), rgba(0, 0, 0, 0.333) ),url(../assets/Teleconsultationurgencesped.webp) no-repeat center/cover;
+               color: var(--white);
+               position: relative;
+               margin-top: 0;
+           }
+           p.title2 {
+               margin-top: 30px;
+               font-size: 3rem;
+               color: #6e9f58;
+               margin-left: 1%;
+           }
+           p.intro2 {
+               line-height: 25px;
+               font-size: 1.1rem;
+               color: #e3e3e3;
+               margin: 38px 0;
+               margin-left: 1%;
+               width: 50%;
+           }
+           .button{
+               font-family: 'Pacifico', cursive;
+               padding: 6px 33px;
+               border-radius: 10px;
+               margin-left: 1%;
+               border:1px solid var(--greenF);
+               color: white;
+               background-color: #0d636972;
+               margin-bottom: 37px;
+               cursor: pointer;
+               transition: all 0.7s ease-in-out;
+           }
+           .containerW{
+               display: flex;
+               align-items: flex-start;
+               justify-content: center;
+               flex-direction: column;
+               height: 100vh;
+           }
+           .bgIcon{
+               position: absolute;
+               bottom: 0%;
+               right: 0%;
+               font-size: 500px;
+               color: #a7a7a775;
+           }
+           @media only screen and (max-width: 991px){
+            .firstSection{
+                background: linear-gradient( rgba(0, 0, 0,85%), rgba(0, 0, 0, 0.333) ),url(../assets/Teleconsultationurgencesped.webp) no-repeat center/cover;
+            }   
+            p.intro2 {
+                   line-height: 25px;
+                   font-size: 1rem;
+                   color: #e3e3e3;
+                   margin: 38px 0;
+                   margin-left: 2%;
+                   width: 90%;
+               }
+               p.title2 {
+                   margin-top: 30px;
+                   font-size: 2rem;
+                   color: #6e9f58;
+                   margin-left: 2%;
+               }
+               header ul li a {
+                    color: #ffffff;
+                    border: transparent 2px solid;
+                    padding: 1px 0px;
+                    border-radius: 151px;
+                    background: #0b697300;
+                }
+                header a .plogo{
+                    display: none;
+                }
+                header ul li a{
+                    color: #ffffff;
+                }
+                header ul.navigation2.active {
+                    right: 55%;
+                }
+               header a .plogo{
+                display: none;
+            }
+               .bgIcon{
+                   display: none;
+               }
+               .button{
+                   width: 207px;
+                   margin-left: 2%;
+                   text-align: center;
+               }
+           }
+           @media only screen and (max-width: 443px) and (max-height: 736px){
+            .containerW{
+               height: auto;
+           }
+           p.intro2 {
+                   line-height: 15px;
+                   font-size: 1rem;
+                
+               }
+               p.title2 {
+                   margin-top: 15px;
+                   font-size: 1.5rem;
+                   
+               }
+           }
+           @media only screen and (min-width:1200px){
+               .bgIcon{
+                   font-size: 550px;
+                   color: #a7a7a775;
+               }
+           }
+           @media only screen and (min-width: 1400px){
+               .bgIcon{
+                   font-size: 600px;
+                   color: #a7a7a775;
+               }
+           }
+           @media only screen and (min-width: 1600px){
+               .bgIcon{
+                   font-size: 650px;
+                   color: #a7a7a775;
+               }
+           }
+           @media only screen and (min-width: 1800px){
+               .bgIcon{
+                   font-size: 700px;
+                   color: #a7a7a775;
+               }
+           }
+           @media only screen and (min-width:2000px){
+               .bgIcon{
+                   font-size: 750px;
+                   color: #a7a7a775;
+               }
+           }
+           @media only screen and (min-width:2200px){
+               .bgIcon{
+                   font-size: 800px;
+                   color: #a7a7a775;
+               }
+           }
+       </style>
+   </head>
+   <body>
+    <header>
+        <a href="#">
+            <img src="../assets/logo.png" alt="LOGO" style="filter: drop-shadow(2px 4px 6px black);border-radius:1000px;padding:2px;" >
+            <p class="plogo" style="font-size: 13px;float:right;letter-spacing: 2.5px;padding-top: 5px;padding-left: 10px;text-decoration: none;color: #62999d;font-weight: bolder;">Dr. Hasnâa CHEMSI <br><span style="letter-spacing: -1px;font-size:9px;">Pédopsychiatre&nbsp;-&nbsp;Addictologue&nbsp;-&nbsp;Psychothérapeute</span></p>
+        </a>
+            <ul class="navigation">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../index.html#article">Actualité</a></li>
+                <li>
+                    <a href="#" class="hovermenu">Services</a>
+                    <div class="sub-menu">
+                        <ul class="list1">
+                            <li><a href="../services/pedoTerapy.html" style="text-decoration:none;">Pédopsychiatrie</a></li>
+                            <li><a href="../services/contact2.html" style="text-decoration:none;">Téléconsultation</a></li>
+                            <li><a href="../services/pedoTerapy.html" style="text-decoration:none;">Psychothérapie</a></li>
+                            <li><a href="../services/addictologie.html" style="text-decoration:none;">Addictologie</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="../contact.html" >Contact</a>
+                </li>
+            </ul>
+            <ul class="navigation2">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../index.html#article">Actualité</a></li>
+                <li><a href="../services/pedoTerapy.html">Pédopsychiatrie</a></li>
+                <li><a href="../services/contact2.html">Téléconsultation</a></li>
+                <li><a href="../services/pedoTerapy.html">Psychothérapie</a></li>
+                <li><a href="../services/addictologie.html">Addictologie</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <script src="../Js/header.js"></script>
+    </header>
+       <div class="fixedFrame">
+           <a href="https://wa.me/212701260887?text=bonjour" target="_blank"><ion-icon name="logo-whatsapp" ></ion-icon></a>
+           <a href="https://www.instagram.com/dr.hasnaachemsi/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+           <a href="https://www.youtube.com/channel/UCn5X4iNgLAO260yvnjESuow" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+           <a href="https://www.facebook.com/Dr.Chemsi/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+           <a href="https://www.linkedin.com/in/dr-hasn%C3%A2a-chemsi-b1b652127" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>      
+       </div>
+       <div class="chevron">
+           <a href="#"><ion-icon name="chevron-up-outline"></ion-icon></a>
+       </div>
+       <div class="call">
+           <a href="../contact.html" target="_blank"><ion-icon name="call-outline"></ion-icon></a>
+       </div>
+       <!--//////////////////////////////////////////////////////////////////////////////////-->
+           <article class="firstSection">
+               <div class="containerW">
+                   <p class="title2">
+                       Téléconsultation pédopsychiatrique :
+                   </p>
+                   
+                   <p class="intro2">
+                       La téléconsultation est une forme de pratique médicale à distance utilisant les technologies de l’information et de la communication. 
+                       <br>
+                       Elle implique nécessairement l’utilisation de la vidéo, via un ordinateur,  une tablette ou un smartphone.  Cette consultation se déroule de la même manière qu’une consultation dans un cabinet médicale et apporte le même accompagnement qu’une consultation physique.<br>
+                       Dr. Hasnâa CHEMSI, pédopsychiatre,  Psychothérapeute et addictologue propose des consultations en ligne pour les patients qui ne sont pas en mesure de se déplacer par manque de transports en commun ou handicap physique , ou par manque de temps ou tout simplement pour les patients qui se sentent plus à l’aise avec les outils informatiques. 
+                   </p>
+       
+                   <a href="https://wa.me/212701260887?text=bonjour" class="button">
+                       <ion-icon name="caret-forward-outline">
+                       </ion-icon>
+                   </a>
+               </div>
+               <ion-icon name="logo-whatsapp" class="bgIcon"></ion-icon>
+           </article>
+       </div>
+         <!--//////////////////////////////////////////////////////////////////////////////////-->
+        <div class="boutton2">
+            <svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="900" height="600" fill="#16656c"></rect><g fill="#9ECC45"><circle r="147" cx="219" cy="137"></circle><circle r="65" cx="703" cy="441"></circle><circle r="119" cx="233" cy="555"></circle></g></svg>
+            <p class="title2">NOUS SOMMES A VOTRE ECOUTE</p>
+            <a class="btn2"  href="../contact.html">
+                <ion-icon name="logo-whatsapp" ></ion-icon>
+                <p>Réserver un RDV</p>
+            </a>
+        </div>
+    <!--//////////////////////////////////////////////////////////////////////////////////-->
+    <footer id="footer">
+        <div class="container">
+            <div class="container2">
+                <p>
+                    <span style="color:#83B041;font-weight: bold;letter-spacing: 1px;">Coordonées :</span><br>
+                    <ion-icon name="call-outline" style="color:#0d6369;margin-bottom: -3px;"></ion-icon> : <span style="color:#ffffff;">0701260887&nbsp;/&nbsp;052865093</span><br>
+                    <ion-icon name="location-outline"style="color:#0d6369;margin-bottom: -3px;" ></ion-icon> : Quartier des hôpitaux, Casablanca<br>
+                    <ion-icon name="mail-outline"style="color:#0d6369;margin-bottom: -3px;"></ion-icon> : <span style="color:#ffffff;">hasnaa.chemsi</span>@gmail.com<br><br>
+                    <p style="color:#83B041;font-weight: bold;letter-spacing: 1px;">Suivez nous sur :</p>
+                </p>
+                <div class="iconBox">
+                    <a href="https://wa.me/212701260887?text=bonjour" target="_blank"><ion-icon name="logo-whatsapp" ></ion-icon></a>
+                    <a href="https://www.instagram.com/dr.hasnaachemsi/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.youtube.com/channel/UCn5X4iNgLAO260yvnjESuow" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                    <a href="https://www.facebook.com/Dr.Chemsi/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/dr-hasn%C3%A2a-chemsi-b1b652127" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d44078.47805837659!2d-7.673192580269687!3d33.58440566169001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%3A%20quartier%20des%20h%C3%B4pitaux%2C%20casa%20!5e0!3m2!1sfr!2sma!4v1650523220005!5m2!1sfr!2sma"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            </div>    
+        </div>
+        <div class="copyright">
+            <a href="#">©SOHAIBSOUSSIPRODUCTION</a>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
