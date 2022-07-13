@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/fix.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/end.css">
+    
+    <style>
+         *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body{
+            background-color: #ffffff;
+        }
+        
+        section {
+            margin: 65px 30px;
+            max-width: 886px;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            flex-direction: column;
+            margin-left: 25%;
+            margin-top: 99px;
+        }
+        strong {
+            display: table;
+            margin: 0%;
+        }
+        a{
+            color: #47A6E5;
+        }
+        header ul li a {
+            color: #ffffff;
+            border: white 2px solid;
+            padding: 1px 12px;
+            border-radius: 151px;
+            background: #0b697347;
+        }
+        ul{
+            margin-left: 21px;
+        }
+        b,strong,h3,h2{
+            color: #83B041;
+        }
+        .firstSection {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 79vh;
+            width: 100%;
+            background: linear-gradient( rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.333) ),url(../assets/harm.webp) no-repeat center/cover;
+            color: var(--white);
+            position: relative;
+            margin-top: 0;
+        }
+
+        @media only screen and (max-width: 991px){
+            section {
+                margin: 65px 30px;
+                max-width: 886px;
+            }
+            .firstSection{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 34vh;
+                width: 100%;
+                background: linear-gradient( rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.333) ),url(../assets/harm.webp) no-repeat left/cover;
+                color: var(--white);
+                position: relative;
+                
+            }
+            strong {
+                display: table;
+                margin: 0%;
+            }
+            a{
+                color: #47A6E5;
+            }
+            header ul li a {
+            color: #ffffff;
+            border: transparent 2px solid;
+            padding: 1px 0px;
+            border-radius: 151px;
+            background: #0b697300;
+            }
+            header ul li a{
+                color: #ffffff;
+                font-size: 1.2rem;
+            }
+            header ul.navigation2.active {
+                right: 55%;
+            }
+            header a .plogo{
+                display: none;
+            }
+            .textBox h2 {
+                font-size: 2.3em;
+            }
+            .containerA {
+                font-size: 1.3rem;       
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#">
+            <img src="../assets/logo.png" alt="LOGO" style="filter: drop-shadow(2px 4px 6px black);border-radius:1000px;padding:2px;" >
+            <p class="plogo" style="font-size: 13px;float:right;letter-spacing: 2.5px;padding-top: 5px;padding-left: 10px;text-decoration: none;color: #62999d;font-weight: bolder;">Dr. Hasnâa CHEMSI <br><span style="letter-spacing: -1px;font-size:9px;">Pédopsychiatre&nbsp;-&nbsp;Addictologue&nbsp;-&nbsp;Psychothérapeute</span></p>
+        </a>
+            <ul class="navigation">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../index.html#article">Actualité</a></li>
+                <li>
+                    <a href="#" class="hovermenu">Services</a>
+                    <div class="sub-menu">
+                        <ul class="list1">
+                            <li><a href="../services/pedoTerapy.html" style="text-decoration:none;">Pédopsychiatrie</a></li>
+                            <li><a href="../services/contact2.html" style="text-decoration:none;">Téléconsultation</a></li>
+                            <li><a href="../services/pedoTerapy.html" style="text-decoration:none;">Psychothérapie</a></li>
+                            <li><a href="../services/addictologie.html" style="text-decoration:none;">Addictologie</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="../contact.html" >Contact</a>
+                </li>
+            </ul>
+            <ul class="navigation2">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../index.html#article">Actualité</a></li>
+                <li><a href="../services/pedoTerapy.html">Pédopsychiatrie</a></li>
+                <li><a href="../services/contact2.html">Téléconsultation</a></li>
+                <li><a href="../services/pedoTerapy.html">Psychothérapie</a></li>
+                <li><a href="../services/addictologie.html">Addictologie</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <script src="../Js/header.js"></script>
+    </header>
+    <div class="fixedFrame">
+        <a href="https://wa.me/212701260887?text=bonjour" target="_blank"><ion-icon name="logo-whatsapp" ></ion-icon></a>
+        <a href="https://www.instagram.com/dr.hasnaachemsi/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="https://www.youtube.com/channel/UCn5X4iNgLAO260yvnjESuow" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+        <a href="https://www.facebook.com/Dr.Chemsi/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="https://www.linkedin.com/in/dr-hasn%C3%A2a-chemsi-b1b652127" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>      
+    </div>
+    <div class="chevron">
+        <a href="#"><ion-icon name="chevron-up-outline"></ion-icon></a>
+    </div>
+    <div class="call">
+        <a href="../contact.html" target="_blank"><ion-icon name="call-outline"></ion-icon></a>
+    </div>
+    <article class="firstSection">
+        <h1>Les comportements d&rsquo;automutilations</h1>
+    </article>
+    <section>
+        <h1><strong>Les comportements d&rsquo;automutilations &laquo;&nbsp;scarifications&nbsp;&raquo; chez l&rsquo;adolescent</strong></h1>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>Introduction&nbsp;:</strong></p>
+<br>
+<ul>
+<li><h1> Les comportements d&rsquo;automutilation de type &laquo;&nbsp;scarifications&nbsp;&raquo; sont de plus en plus fr&eacute;quents chez les adolescents, et de plus en plus identifi&eacute;s comme probl&eacute;matiques aussi bien par la population que par les professionnels durant ces derni&egrave;res d&eacute;cennies. Ils pourraient &agrave; l&rsquo;avenir repr&eacute;senter une part importante de la demande de soins en p&eacute;dopsychiatrie.</h1></li>
+</ul>
+<br>
+<p><strong>D&eacute;finition des automutilations:</strong></p>
+<br>
+<ul>
+<li>Les automutilations sont des alt&eacute;rations intentionnelles, conscientes et directes des tissus de l&rsquo;organisme, sans volont&eacute; de mourir. Ce ne sont pas des tentatives de suicide, notamment dans leur intentionnalit&eacute;, et ils ne conduisent pas &agrave; des blessures pouvant menacer le pronostic vital de l&rsquo;adolescent.</li>
+<li>Ce sont des conduites plus fr&eacute;quentes chez les adolescents anxieux plus que chez les d&eacute;prim&eacute;s ++</li>
+<li>Et ils sont accompagn&eacute;s d&rsquo;id&eacute;ations suicidaires fr&eacute;quentes, avec au long cours un risque accru de suicide</li>
+</ul>
+<br>
+<p><strong>Les types d&rsquo;automutilations&nbsp;:</strong></p>
+<br>
+<p>Plusieurs types d&rsquo;automutilations, soit des&nbsp;:</p>
+<ul>
+<li>Br&ucirc;lures: 35% des automutilations</li>
+<li>Morsures, piq&ucirc;res, contusions ou pincements localis&eacute;s</li>
+<li>Coupures: 75% des patients:
+<ul>
+<li>incision unique</li>
+<li>Multitude d&rsquo;&eacute;rosions superficielles pouvant couvrir une importante surface cutan&eacute;e</li>
+</ul>
+</li>
+</ul>
+<br>
+<p><strong>Les localisations&nbsp;des automutilations&nbsp;:</strong></p>
+<br>
+<ul>
+<li>Les bras et l&rsquo;avant-bras, surtout gauche&nbsp;: cible privil&eacute;gi&eacute;e</li>
+<li>Face ant&eacute;rieure du tronc et des cuisses, cuir chevelu</li>
+<li>Face interne des cuisses, pourtour des organes g&eacute;nitaux, ou les seins rares &rarr; signification particuli&egrave;re</li>
+</ul>
+<br>
+<p><strong>Les moyens utilis&eacute;s&nbsp;:</strong></p>
+<br>
+<ul>
+<li>Les moyens utilis&eacute;s sont vari&eacute;s, rendant leur &eacute;viction impossible m&ecirc;me en milieu hospitalier:
+<ul>
+<li>Les cigarette+++: pour les br&ucirc;lures, ou filtre de cigarette durci au feu</li>
+<li>Les Lames de rasoir et couteau</li>
+<li>L&rsquo;&eacute;clat de verre ou de porcelaine</li>
+<li>Les aiguilles</li>
+<li>Les morceaux de disque compact bris&eacute; a cet effet</li>
+<li>Les fragments de crayon</li>
+<li>La r&eacute;ouverture de plaies anciennes</li>
+</ul>
+</li>
+<li>Utilisation successive de plusieurs de ces moyens</li>
+</ul>
+<br>
+<p><strong>Classification&nbsp;:</strong></p>
+<br>
+<ul>
+<li>Question &agrave; poser: s&rsquo;il faut consid&eacute;rer le comportement automutilateur comme une entit&eacute; clinique autonome ou bien comme partie int&eacute;grante de syndromes cliniques divers.</li>
+<li>L&rsquo;automutilation est un crit&egrave;re symptomatique du trouble de personnalit&eacute; &laquo; borderline &raquo;.</li>
+<li>Il est aussi relev&eacute; chez les personnalit&eacute;s histrioniques, antisociales, syndrome post-traumatique, TCA notamment la boulimie.</li>
+<li>Il est class&eacute; comme &laquo; trouble du contr&ocirc;le des impulsions non sp&eacute;cifi&eacute; &raquo; dans la classification internationale CIM (F63.9)&nbsp;</li>
+<li>Dans la classification, purement ph&eacute;nom&eacute;nologique, de &laquo; FAVAZZA &raquo;, il diff&eacute;rencie:
+<ul>
+<br>
+<li><strong></strong>Les automutilations majeures </strong>: &eacute;nucl&eacute;ation, castration, amputation&hellip;
+<br>
+<ul>
+<li>Contexte: psychose aig&uuml;e, schizophr&eacute;nie, m&eacute;lancolie, intoxication aig&uuml;e</li>
+</ul>
+</li>
+<br>
+<li><strong></strong>Les automutilations st&eacute;r&eacute;otyp&eacute;es, rythmique</strong>: autisme, retard mentale, atteintes c&eacute;r&eacute;brales organiques</li>
+<br>
+<li><strong></strong>Les automutilations mod&eacute;r&eacute;es ou superficielles</strong>: incluent trichotillomanie et onychophagie</li>
+<br>
+</ul>
+</li>
+</ul>
+<br>
+<p><strong>Facteurs de risque&nbsp;: </strong></p>
+<br>
+<p>Plusieurs facteurs de risque sont incrimin&eacute;s, qu&rsquo;on peut diviser en trois groupes&nbsp;:</p>
+<ul>
+<br>
+<li><strong>Facteurs de risque individuels:</strong>
+<br>
+<ul>
+<li>Pr&eacute;sence de troubles psychiatriques (&eacute;pisode d&eacute;pressif majeur par exemple)</li>
+<li>Sentiments de d&eacute;sespoir, pessimisme, vision n&eacute;gative de la vie</li>
+<li>Abus de substances psychoactives ou d&rsquo;alcool</li>
+<li>Atteinte r&eacute;cente de l&rsquo;estime de soi</li>
+<li>Faibles r&eacute;sultats scolaires, angoisse de performance</li>
+<li>Confrontation &agrave; la sexualit&eacute;</li>
+</ul>
+</li>
+<br>
+<li><strong>Facteurs de risques familiaux:</strong>
+<br>
+<ul>
+<li>Ant&eacute;c&eacute;dents d&rsquo;abus sexuels et/ou physiques et de n&eacute;gligence</li>
+<li>Pr&eacute;sence d&rsquo;un comportement automutilateur chez un membre de la famille ou un ami proche</li>
+<li>S&eacute;paration des parents, relations pauvres avec ceux-ci</li>
+<li>Attente parentale trop forte ou per&ccedil;ue comme telle, notamment de r&eacute;ussite scolaire</li>
+<li>Surprotection familiale</li>
+</ul>
+</li>
+<br>
+<li><strong>Facteurs de risque sociaux:</strong>
+<br>
+<ul>
+<li>Perte r&eacute;cente d&rsquo;une figure importante (parent, membre d&rsquo;une &eacute;quipe, ami proche, etc.)</li>
+<li>Influence des m&eacute;dias (c&eacute;l&eacute;brit&eacute; qui s&rsquo;automutile, s&eacute;rie ou films avec automutilations...)</li>
+<li>Rupture sentimentale</li>
+<li>Brimades subies (camarades,..)</li>
+<li>Isolement social/vie en milieu rural</li>
+<li>Disponibilit&eacute; des m&eacute;thodes d&rsquo;automutilation</li>
+<li>Appartenance &agrave; une minorit&eacute; ethnique</li>
+</ul>
+</li>
+</ul>
+<br>
+<p><strong>Comment &eacute;volue le comportement d&rsquo;automutilation:</strong></p>
+<br>
+<ul>
+<li>Le comportement perdure souvent une dizaine d&rsquo;ann&eacute;es, se manifestant par des p&eacute;riodes s&eacute;par&eacute;es par des intervalles libres parfois prolong&eacute;s.</li>
+<li>Chronicit&eacute; : &frac34; des patients</li>
+<li>Deux profils:
+<ul>
+<li>Compulsif: 2 % des patients</li>
+<li>Impulsif: trois quarts des patients borderline, le plus souvent des coupures (75 %) ou des br&ucirc;lures (35 %)
+<ul>
+<li>&Eacute;pisodique</li>
+<li>r&eacute;p&eacute;titif</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<br>
+<p><strong>&Eacute;pid&eacute;miologie&nbsp;:</strong></p>
+<br>
+<ul>
+<li>Faible chez l&rsquo;enfant et s&rsquo;&eacute;l&egrave;ve consid&eacute;rablement d&egrave;s le d&eacute;but de l&rsquo;adolescence</li>
+<li>Augmentation de fr&eacute;quence des comportements auto-mutilatoires chez les adolescents avec le d&eacute;veloppement de comportement plus socialis&eacute;s de marquage du corps: tatouages, piercing, look &laquo;&nbsp;gothique &raquo;, &laquo; body art &raquo;</li>
+<li>population g&eacute;n&eacute;rale:
+<ul>
+<li>4 &agrave; 10% de la population g&eacute;n&eacute;rale adulte se seraient scarifi&eacute;s au moins une fois</li>
+<li>1%de fa&ccedil;on r&eacute;p&eacute;titive</li>
+<li>12 &agrave; 35% des &eacute;tudiants am&eacute;ricains de &laquo; coll&egrave;ge &raquo; reconnaissent s&rsquo;&ecirc;tre auto-agress&eacute;s au moins une fois</li>
+</ul>
+</li>
+<li>Milieu psychiatrique:
+<ul>
+<li>Tiers des patients consultant en psychiatrie se sont scarifi&eacute;s dans les trois mois pr&eacute;c&eacute;dents, parmi ceux-ci 45% plus de trois fois</li>
+</ul>
+</li>
+<li>Genre:
+<ul>
+<li>Pour nombre d&rsquo;auteurs, la pr&eacute;pond&eacute;rance f&eacute;minine n&rsquo;est pas certaine</li>
+<li>Pour d&rsquo;autres, elle approche 70% des cas</li>
+</ul>
+</li>
+</ul>
+<br>
+<p><strong>Comorbidit&eacute;s&nbsp;:</strong></p>
+<br>
+<ul>
+<li>Les troubles des conduites alimentaires &ndash; notamment la boulimie &ndash; &frac12; des boulimiques s&rsquo;automutilent</li>
+<li>Le trouble borderline de la personnalit&eacute;</li>
+</ul>
+<br>
+<p><strong>Questionnaires&nbsp;:</strong></p>
+<br>
+<ul>
+<li>Il existe plusieurs questionnaires, surtout descriptifs, permettant l&rsquo;&eacute;valuation des comportements automutilateurs en pratique courante:
+<ul>
+<li>Self-Injury self-report inventory (SISRI)</li>
+<li>Ottawa self-injury questionnaire (OSI)</li>
+<li>Functional assessment of self-mutilation (FASM)</li>
+<li>Self-harm inventory (SHI)</li>
+<li>Chronic self-destructiveness scale (CSDS)</li>
+<li>Self-harm behavior survey (SHBS)</li>
+<li>Harkavy asnis suicide survey II (HASS-II)</li>
+<li>Self-injury survey</li>
+</ul>
+</li>
+</ul>
+<br>
+<p><strong>&Eacute;valuation clinique&nbsp;:</strong></p>
+<br>
+<ul>
+<li>L&rsquo;automutilation n&eacute;cessite une &eacute;valuation clinique rigoureuse pr&eacute;cisant les points suivants:
+<ul>
+<li>L&rsquo;historique des comportements d&rsquo;automutilation</li>
+<li>La pr&eacute;sence d&rsquo;id&eacute;ations suicidaires</li>
+<li>La relation temporelle entre suicidalit&eacute; et comportements suicidaires</li>
+<li>Les ant&eacute;c&eacute;dents et la fr&eacute;quence actuelle des automutilations</li>
+<li>L&rsquo;&acirc;ge de d&eacute;but, l&rsquo;&eacute;volution, la dur&eacute;e des p&eacute;riodes sans passage &agrave; l&rsquo;acte, les changements au fil du temps</li>
+<li>Les complications ou les interventions m&eacute;dicales</li>
+<li>Les &eacute;tats &eacute;motionnels, les facteurs d&eacute;clenchant du passage &agrave; l&rsquo;acte</li>
+<li>Les suites du comportement, imm&eacute;diates et ult&eacute;rieures</li>
+<li>Le degr&eacute; d&rsquo;urgence et d&rsquo;impulsivit&eacute;</li>
+<li>La dystonicit&eacute; (d&eacute;sir de s&rsquo;arr&ecirc;ter soi-m&ecirc;me)</li>
+<li>La r&eacute;sistance (effort pour s&rsquo;interrompre soi-m&ecirc;me)</li>
+<li>Le contr&ocirc;le (succ&egrave;s &agrave; s&rsquo;arr&ecirc;ter soi-m&ecirc;me)</li>
+<li>L&rsquo;analg&eacute;sie</li>
+<li>L&rsquo;utilisation de substances avant ou pendant le passage &agrave; l&rsquo;acte</li>
+<li>L&rsquo;histoire familiale de comportements d&rsquo;automutilation</li>
+<li>Les ant&eacute;c&eacute;dents personnels de traitement</li>
+</ul>
+</li>
+</ul>
+<br>
+<p><strong>La description des automutilations:</strong></p>
+<br>
+<ul>
+<li>Les automutilations commencent dans 59 % des cas vers l&rsquo;&acirc;ge de 12-13 ans et pour pr&egrave;s d&rsquo;un quart des cas vers l&rsquo;&acirc;ge de 10-11 ans ou auparavant</li>
+<li>Un &eacute;v&eacute;nement d&eacute;clenchant s&rsquo;accompagne d&rsquo;une envie compulsive de se blesser, accompagn&eacute;e de sentiment qu&rsquo;il est impossible d&rsquo;y r&eacute;sister</li>
+<li>Une conviction de se trouver dans une impasse relationnelle, sans issue, alternative ou contr&ocirc;le possibles</li>
+<li>Avec un sentiment croissant de malaise</li>
+<li>Le passage &agrave; l&rsquo;acte entra&icirc;ne un soulagement d&rsquo;une tension psychique interne (angoisse, tristesse, sentiment de solitude, crainte d&rsquo;abandon, col&egrave;re voire rage) qui ne trouve pas d&rsquo;autres voie d&rsquo;expression</li>
+<li>Le soulagement est d&rsquo;intensit&eacute; et de dur&eacute;e variable</li>
+<li>Avec un v&eacute;cu d&rsquo;obnubilation et de d&eacute;personnalisation a minima</li>
+<li>Douleur physique:
+<ul>
+<li>Certains patients: aucune douleur corporelle au moment de la taillade</li>
+<li>D&rsquo;autres: la douleur physique les soulage</li>
+</ul>
+</li>
+<li>Parfois la vue du sang, ou l&rsquo;int&eacute;rieure de la plaie est une condition importante pour le soulagement</li>
+<li>Le soulagement s&rsquo;accompagne des fois d&rsquo;une l&eacute;g&egrave;re euphorie, un certain degr&eacute; de fiert&eacute; ou de jubilation
+<ul>
+<li>Sentiment de ma&icirc;trise du monde interne et d&rsquo;emprise sur l&rsquo;objet</li>
+</ul>
+</li>
+<li>Dans la majorit&eacute; des cas, ces scarifications se pratiquent dans la solitude</li>
+<li>Elles peuvent &ecirc;tre dissimul&eacute;es (m&eacute;connues de l&rsquo;entourage, parents+++), surtout quand ils sont &eacute;pisodiques</li>
+<li>Elles sont donn&eacute;es &agrave; deviner par une manche discr&egrave;tement relev&eacute;e &agrave; moiti&eacute; sur la plaie: test d&rsquo;investissement de l&rsquo;entourage</li>
+<li>Cette m&eacute;connaissance comprise par l&rsquo;adolescent comme un manque d&rsquo;int&eacute;r&ecirc;t</li>
+<li>Elles sont rarement pratiqu&eacute;es en groupe, mais peuvent &ecirc;tre tr&egrave;s contagieuses dans certains lieux (internat, prison, service hospitalier&hellip;)</li>
+</ul>
+<p>&laquo; Si vous ne remarquez rien, c&rsquo;est bien la preuve que vous n&rsquo;en avez rien &agrave; fiche de moi (c&rsquo;est un abandon), si vous r&eacute;agissez, sachez que je ne vous ai rien demand&eacute; et que vos interventions sont une intrusion inadmissible dans un domaine qui ne regarde que moi, mon corps m&rsquo;appartient! &raquo;</p>
+<ul>
+<li>Explication donn&eacute; par les adolescents &laquo; se couper pour se soulager, pour expulser la souffrance hors de soi en la mat&eacute;rialisant dans une douleur corporelle, visible &raquo;</li>
+<li>Les adolescents, face &agrave; leurs scarifications, sont capables, en relation avec un tiers-le clinicien- de joindre des mots et de donner du sens &agrave; leur acte</li>
+</ul>
+<br>
+<p><strong>La prise en charge&nbsp;:</strong></p>
+<br>
+<p>La prise en charge combien&nbsp;:</p>
+<ul>
+<li>Un traitement par les psychotropes: antid&eacute;presseurs (ISRS, IRSN), Thymor&eacute;gulateurs</li>
+<li>Des psychoth&eacute;rapies: psychanalytique, cognitivo-comportementale, psychodynamique</li>
+<li>Prise en charge du trouble sous-jacent et de la comorbidit&eacute;</li>
+<li>Si l&rsquo;&eacute;pisode est unique ou relativement rare:
+<ul>
+<li>Interruption du geste: si on est pr&eacute;sent</li>
+<li>Soins locaux</li>
+<li>Reprise &eacute;laborative en entretien, imm&eacute;diat ou diff&eacute;r&eacute;</li>
+</ul>
+</li>
+<li>Si des &eacute;pisodes r&eacute;p&eacute;titifs:
+<ul>
+<li>Panser les blessures auto-inflig&eacute;es par le r&eacute;cit: le discours sur le passage &agrave; l&rsquo;acte,</li>
+<li>sans jugement de la part des soignants</li>
+<li>&Eacute;coute bienveillante, sans interpr&eacute;tation, sans aller au-del&agrave; de ce qui est apport&eacute;, d&rsquo;entendre et d&rsquo;&ecirc;tre l&agrave;</li>
+<li>Le clinicien ne cherche pas &agrave; &eacute;liminer l&rsquo;acte, mais le prend en consid&eacute;ration</li>
+<li>L&rsquo;adolescent doit sentir qu&rsquo;il est accept&eacute; avec sa souffrance et sa conduite d&rsquo;attaque du corps</li>
+<li>Le clinicien &agrave; une fonction de contenance pour ces adolescents, amener l&rsquo;adolescent &agrave; supporter le sens de son acte, &agrave; le cr&eacute;er et &agrave; le dire</li>
+</ul>
+</li>
+</ul>
+<br>
+<p><strong>Conclusion&nbsp;:</strong></p>
+<br>
+<ul>
+<li>Rechercher syst&eacute;matiquement un comportement automutilateur lors d&rsquo;une consultation m&eacute;dicale ou psychologique avec un adolescent.</li>
+<li>&Ecirc;tre sensibilis&eacute; aux signes d&rsquo;alerte d&rsquo;un passage &agrave; l&rsquo;acte automutilateur.</li>
+<li>Suspecter des ant&eacute;c&eacute;dents de maltraitance survenus durant l&rsquo;enfance.</li>
+<li>Ne jamais banaliser un comportement automutilateur particuli&egrave;rement s&rsquo;il se r&eacute;p&egrave;te.</li>
+<li>Distinguer le passage &agrave; l&rsquo;acte automutilateur d&rsquo;un geste suicidaire.</li>
+<li>Consid&eacute;rer le comportement automutilateur &agrave; la lumi&egrave;re de la probl&eacute;matique globale pr&eacute;sent&eacute;e par l&rsquo;adolescent(e).</li>
+<li>Penser les soins de mani&egrave;re int&eacute;gr&eacute;e et dans une optique multifocale.</li>
+</ul>
+<p>&nbsp;</p>
+    </section>
+    <div class="boutton2">
+        <svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="900" height="600" fill="#16656c"></rect><g fill="#9ECC45"><circle r="147" cx="219" cy="137"></circle><circle r="65" cx="703" cy="441"></circle><circle r="119" cx="233" cy="555"></circle></g></svg>
+        <p class="title2">NOUS SOMMES A VOTRE ECOUTE</p>
+        <a class="btn2"  href="../contact.html">
+            <ion-icon name="logo-whatsapp" ></ion-icon>
+            <p>Réserver un RDV</p>
+        </a>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="container2">
+                <p>
+                    <span style="color:#83B041;font-weight: bold;letter-spacing: 1px;">Coordonées :</span><br>
+                    <ion-icon name="call-outline" style="color:#0d6369;margin-bottom: -3px;"></ion-icon> : <span style="color:#ffffff;">0701260887&nbsp;/&nbsp;052865093</span><br>
+                    <ion-icon name="location-outline"style="color:#0d6369;margin-bottom: -3px;" ></ion-icon> : Quartier des hôpitaux, Casablanca<br>
+                    <ion-icon name="mail-outline"style="color:#0d6369;margin-bottom: -3px;"></ion-icon> : <span style="color:#ffffff;">hasnaa.chemsi</span>@gmail.com<br><br>
+                    <p style="color:#83B041;font-weight: bold;letter-spacing: 1px;">Suivez nous sur :</p>
+                </p>
+                <div class="iconBox">
+                    <a href="https://wa.me/212701260887?text=bonjour" target="_blank"><ion-icon name="logo-whatsapp" ></ion-icon></a>
+                    <a href="https://www.instagram.com/dr.hasnaachemsi/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.youtube.com/channel/UCn5X4iNgLAO260yvnjESuow" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                    <a href="https://www.facebook.com/Dr.Chemsi/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/dr-hasn%C3%A2a-chemsi-b1b652127" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d44078.47805837659!2d-7.673192580269687!3d33.58440566169001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%3A%20quartier%20des%20h%C3%B4pitaux%2C%20casa%20!5e0!3m2!1sfr!2sma!4v1650523220005!5m2!1sfr!2sma"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            </div>    
+        </div>
+        <div class="copyright">
+            <a href="#">©SOHAIBSOUSSIPRODUCTION</a>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

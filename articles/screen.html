@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/fix.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/end.css">
+    
+    <style>
+         *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body{
+            background-color: #ffffff;
+        }
+        
+        section {
+            margin: 65px 30px;
+            max-width: 886px;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            flex-direction: column;
+            margin-left: 25%;
+            margin-top: 99px;
+        }
+        strong {
+            display: table;
+            margin: 0%;
+        }
+        a{
+            color: #47A6E5;
+        }
+        header ul li a {
+            color: #ffffff;
+            border: white 2px solid;
+            padding: 1px 12px;
+            border-radius: 151px;
+            background: #0b697347;
+        }
+        ul{
+            margin-left: 21px;
+        }
+        b,strong,h3,h2{
+            color: #83B041;
+        }
+        .firstSection {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 79vh;
+            width: 100%;
+            background: linear-gradient( rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.333) ),url(../assets/screen.webp) no-repeat center/cover;
+            color: var(--white);
+            position: relative;
+            margin-top: 0;
+        }
+
+        @media only screen and (max-width: 991px){
+            section {
+                margin: 65px 30px;
+                max-width: 886px;
+            }
+            .firstSection{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 34vh;
+                width: 100%;
+                background: linear-gradient( rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.333) ),url(../assets/screen.webp) no-repeat left/cover;
+                color: var(--white);
+                position: relative;
+                
+            }
+            strong {
+                display: table;
+                margin: 0%;
+            }
+            a{
+                color: #47A6E5;
+            }
+            header ul li a {
+            color: #ffffff;
+            border: transparent 2px solid;
+            padding: 1px 0px;
+            border-radius: 151px;
+            background: #0b697300;
+            }
+            header ul li a{
+                color: #ffffff;
+                font-size: 1.2rem;
+            }
+            header ul.navigation2.active {
+                right: 55%;
+            }
+            header a .plogo{
+                display: none;
+            }
+            .textBox h2 {
+                font-size: 2.3em;
+            }
+            .containerA {
+                font-size: 1.3rem;       
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#">
+            <img src="../assets/logo.png" alt="LOGO" style="filter: drop-shadow(2px 4px 6px black);border-radius:1000px;padding:2px;" >
+            <p class="plogo" style="font-size: 13px;float:right;letter-spacing: 2.5px;padding-top: 5px;padding-left: 10px;text-decoration: none;color: #62999d;font-weight: bolder;">Dr. Hasnâa CHEMSI <br><span style="letter-spacing: -1px;font-size:9px;">Pédopsychiatre&nbsp;-&nbsp;Addictologue&nbsp;-&nbsp;Psychothérapeute</span></p>
+        </a>
+            <ul class="navigation">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../index.html#article">Actualité</a></li>
+                <li>
+                    <a href="#" class="hovermenu">Services</a>
+                    <div class="sub-menu">
+                        <ul class="list1">
+                            <li><a href="../services/pedoTerapy.html" style="text-decoration:none;">Pédopsychiatrie</a></li>
+                            <li><a href="../services/contact2.html" style="text-decoration:none;">Téléconsultation</a></li>
+                            <li><a href="../services/pedoTerapy.html" style="text-decoration:none;">Psychothérapie</a></li>
+                            <li><a href="../services/addictologie.html" style="text-decoration:none;">Addictologie</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="../contact.html" >Contact</a>
+                </li>
+            </ul>
+            <ul class="navigation2">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../index.html#article">Actualité</a></li>
+                <li><a href="../services/pedoTerapy.html">Pédopsychiatrie</a></li>
+                <li><a href="../services/contact2.html">Téléconsultation</a></li>
+                <li><a href="../services/pedoTerapy.html">Psychothérapie</a></li>
+                <li><a href="../services/addictologie.html">Addictologie</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <script src="../Js/header.js"></script>
+    </header>
+    <div class="fixedFrame">
+        <a href="https://wa.me/212701260887?text=bonjour" target="_blank"><ion-icon name="logo-whatsapp" ></ion-icon></a>
+        <a href="https://www.instagram.com/dr.hasnaachemsi/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="https://www.youtube.com/channel/UCn5X4iNgLAO260yvnjESuow" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+        <a href="https://www.facebook.com/Dr.Chemsi/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="https://www.linkedin.com/in/dr-hasn%C3%A2a-chemsi-b1b652127" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>      
+    </div>
+    <div class="chevron">
+        <a href="#"><ion-icon name="chevron-up-outline"></ion-icon></a>
+    </div>
+    <div class="call">
+        <a href="../contact.html" target="_blank"><ion-icon name="call-outline"></ion-icon></a>
+    </div>
+    <article class="firstSection">
+        <h1>Confinement, adolescents et &eacute;crans&nbsp;</h1>
+    </article>
+    <section>
+        <div style="display:flex;justify-content: space-between;align-items: center;">
+            <p><b>Dr. Hasn&acirc;a CHEMSI</b></p>
+            <p><b>le 28-04-2020</b></p> 
+        </div>
+        
+        <h1><b>P&eacute;dopsychiatre, psychoth&eacute;rapeute </b></h1>
+        <p><b>&nbsp;</b></p>
+        <p><b>&nbsp;</b></p>
+        <p><b>&nbsp;</b></p>
+        <br>
+        <p>Avec la fermeture des &eacute;coles et la mise en &oelig;uvre d&rsquo;un confinement de la population depuis le 20 mars, la probl&eacute;matique li&eacute;e au bon usage des &eacute;crans et aux effets de l&rsquo;exposition des adolescents r&eacute;apparaissent. Surtout qu&rsquo;on s&rsquo;attend &agrave; une augmentation de l&rsquo;utilisation des &eacute;crans durant cette p&eacute;riode pas que pour les adolescents.</p>
+        <br>
+        <p>Comment g&eacute;rer l&rsquo;utilisation des &eacute;crans par les adolescents qui ont leurs propres centres d&rsquo;int&eacute;r&ecirc;t et ont besoin d&rsquo;autonomie surtout dans un espace r&eacute;duit?</p>
+        <br>
+        <p>Dans cette situation de confinement strict, on vise trois objectifs :</p>
+        <br>
+        <ul>
+            <li>Se prot&eacute;ger de l&rsquo;anxi&eacute;t&eacute;.</li>
+            <li>Garder un rythme de vie stable, s&rsquo;occuper, &eacute;tudier et faire de l&rsquo;exercice.</li>
+            <li>Eviter les complications relationnelles&nbsp;</li>
+        </ul>
+        <br>
+        <p>Etre adolescent en p&eacute;riode de confinement n&rsquo;est pas une mince affaire. Eux aussi sont contraints de rester &agrave; la maison, de pas voir leurs propres amis (liens fondamentaux pour les adolescents), et se limiter aux &eacute;crans. Les parents doivent donc essayer d&rsquo;abaisser leur niveau de surveillance afin de jouer la carte de l&rsquo;apaisement familial ainsi qu&rsquo;imprimer un rythme qui est celui de la famille et de donner un cadre qui fait sens pour bien organiser le quotidien.</p>
+        <br>
+        <p>Respecter certaines r&egrave;gles. "Les &eacute;crans en soi ne sont pas forc&eacute;ment mauvais,&nbsp;<strong>tout d&eacute;pend de la mani&egrave;re dont on les utilise</strong>."&nbsp;Les cha&icirc;nes d&rsquo;information, par exemple, nous permettent de rester au courant. Mais les laisser allumer toute la journ&eacute;e rend vuln&eacute;rable au stress et cela risque de g&eacute;n&eacute;rer une anxi&eacute;t&eacute; inutile, donc il vaut mieux privil&eacute;gier&nbsp;des contenus plus r&eacute;cr&eacute;atifs et l&eacute;gers&nbsp;(s&eacute;ries, films etc.).</p>
+        <br>
+        <p>Faire des emplois du temps.&nbsp;Pour la maison, affichez les horaires de la famille : horaires de lever, de coucher, de repas, et des activit&eacute;s... etc</p>
+        <br>
+        <p>La maison se transforme en &eacute;cole pendant le confinement.&nbsp;Les adolescents sont en ce moment &eacute;norm&eacute;ment occup&eacute;s par leur travail scolaire et beaucoup d&rsquo;entre eux d&rsquo;ailleurs sont plus investis, plus productifs. Il est recommand&eacute; pour votre adolescent de continuer &agrave; avoir une activit&eacute; scolaire quotidienne, mais son &ecirc;tre sur son dos&nbsp;; ne cherchez pas &agrave; lui faire rattraper son retard en fran&ccedil;ais ou en Math&eacute;matiques. L&rsquo;important c&rsquo;est qu&rsquo;il garde un rythme et apprenne dans le plaisir.</p>
+        <br>
+        <p>Il&nbsp; ne s&rsquo;agit pas pour autant de laisser de c&ocirc;t&eacute; toute forme d&rsquo;autorit&eacute; mais de maintenir une exigence qui se devait d&rsquo;&ecirc;tre d&eacute;j&agrave; l&agrave;, afin de rendre possible le partage d&rsquo;une vie familiale respectueuse des uns et des autres. Les &eacute;crans, oui mais pas jusqu&rsquo;&agrave; quatre heures du matin. Les adolescents ont besoin de sommeil&nbsp;! Surtout que ces derniers ont un d&eacute;calage de phase physiologique ;&nbsp;ils sont naturellement&nbsp;&laquo; couche tard l&egrave;ve tard &raquo;. Avec le confinement et la perte des routines cela va s&rsquo;accentuer. Si vous ne voulez pas que votre ado se transforme en oiseau de nuit, &eacute;vitez la surconsommation de tablette et de t&eacute;l&eacute;phone le soir, et instaurez un couvre-feu de connexion par exemple jusqu'&agrave; 22H</p>
+        <br>
+        <p><strong>Cr&eacute;er du temps collectif agr&eacute;able&nbsp;: </strong>des repas ensemble, des conversations sur des th&egrave;mes que l&rsquo;on aborde plus rarement&nbsp;: la politique, la cuisine, l&rsquo;amiti&eacute; les jeux vid&eacute;os&hellip;tous les sujets qui projettent l&rsquo;adolescent vers son devenir, inventez des soir&eacute;es home cin&eacute;ma, jeux de carte, permettez vous de rire et de passer de bon moments.</p>
+        <br>
+        <p><strong>Passer du temps ensemble oui mais sans oublier qu&rsquo;il faut respecter le temps de solitude de chacun.&nbsp;</strong>Tout comme vous, votre adolescent a besoin de temps de solitude o&ugrave; il n&rsquo;est pas sollicit&eacute; et o&ugrave; il peut se d&eacute;tendre &agrave; sa guise ou contacter ses copains. Si vous ne voulez pas que ces temps d&eacute;bordent, il faut les formaliser avec lui : tous les jours de telle heure &agrave; telle heure, par exemple. Mais une fois formalis&eacute;s, il est&nbsp;<strong>imp&eacute;ratif de respecter&nbsp;</strong>son temps de solitude. C&rsquo;est-&agrave;-dire ne pas entrer dans sa chambre, ne pas le solliciter, ne pas &laquo; en profiter pour&hellip; &raquo;.</p>
+        <br>
+        <p>&nbsp;Planifier des activit&eacute;s physiques (sport, yoga, dance&hellip;) qui peuvent &ecirc;tre faites &agrave; la maison</p>
+        <br>
+        <p>Encourager la participation des adolescents aux t&acirc;ches m&eacute;nag&egrave;res pour leur donner le sentiment d&rsquo;avoir accompli une action positive</p>
+        <br>
+        <p>Proposer &agrave; vos adolescents de commencer quelque de chose de nouveau&nbsp;; demander &agrave; votre adolescent de prendre une feuille et un stylo, et&nbsp;de noter toutes les activit&eacute;s qu&rsquo;ils aimeront faire s&rsquo;ils auront&nbsp; plus de temps. Se reposer, lire, trier ses v&ecirc;tements, ou apprendre une nouvelle langue sont des passe-temps qui peuvent&nbsp;vous motiver &agrave; passer moins de temps sur un smartphone ou une tablette.</p>
+        <br>
+        <p><strong>Et surtout f&eacute;liciter et valoriser nos adolescents.&nbsp;</strong>Il est primordial de souligner les efforts que fait votre adolescent, m&ecirc;me si cela vous apparait &laquo; naturel &raquo;, car rien n&rsquo;est naturel quand on est confin&eacute;.</p>
+        <br>
+        <p>Pour les adolescents pr&eacute;sentant un handicap physique ou mentale, touts ces conseils peuvent &ecirc;tre appliqu&eacute;s sans oublier de rester en contact avec son p&eacute;dopsychiatre et son &eacute;ducateurs sp&eacute;cialis&eacute; pour pouvoir continuer le travail sur son programme&nbsp; psycho-&eacute;ducatif.</p>
+        <br>
+        <p>L&rsquo;organisation de sa journ&eacute;e est un &eacute;l&eacute;ment primordial.&nbsp; Alterner avec des moments de travail, de repos et d&rsquo;activit&eacute;s ludiques, pour maintenir un cadre de vie agr&eacute;able.</p> 
+    </section>
+    <div class="boutton2">
+        <svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="900" height="600" fill="#16656c"></rect><g fill="#9ECC45"><circle r="147" cx="219" cy="137"></circle><circle r="65" cx="703" cy="441"></circle><circle r="119" cx="233" cy="555"></circle></g></svg>
+        <p class="title2">NOUS SOMMES A VOTRE ECOUTE</p>
+        <a class="btn2"  href="../contact.html">
+            <ion-icon name="logo-whatsapp" ></ion-icon>
+            <p>Réserver un RDV</p>
+        </a>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="container2">
+                <p>
+                    <span style="color:#83B041;font-weight: bold;letter-spacing: 1px;">Coordonées :</span><br>
+                    <ion-icon name="call-outline" style="color:#0d6369;margin-bottom: -3px;"></ion-icon> : <span style="color:#ffffff;">0701260887&nbsp;/&nbsp;052865093</span><br>
+                    <ion-icon name="location-outline"style="color:#0d6369;margin-bottom: -3px;" ></ion-icon> : Quartier des hôpitaux, Casablanca<br>
+                    <ion-icon name="mail-outline"style="color:#0d6369;margin-bottom: -3px;"></ion-icon> : <span style="color:#ffffff;">hasnaa.chemsi</span>@gmail.com<br><br>
+                    <p style="color:#83B041;font-weight: bold;letter-spacing: 1px;">Suivez nous sur :</p>
+                </p>
+                <div class="iconBox">
+                    <a href="https://wa.me/212701260887?text=bonjour" target="_blank"><ion-icon name="logo-whatsapp" ></ion-icon></a>
+                    <a href="https://www.instagram.com/dr.hasnaachemsi/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.youtube.com/channel/UCn5X4iNgLAO260yvnjESuow" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                    <a href="https://www.facebook.com/Dr.Chemsi/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/dr-hasn%C3%A2a-chemsi-b1b652127" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d44078.47805837659!2d-7.673192580269687!3d33.58440566169001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%3A%20quartier%20des%20h%C3%B4pitaux%2C%20casa%20!5e0!3m2!1sfr!2sma!4v1650523220005!5m2!1sfr!2sma"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            </div>    
+        </div>
+        <div class="copyright">
+            <a href="#">©SOHAIBSOUSSIPRODUCTION</a>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
