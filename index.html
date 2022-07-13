@@ -5,27 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./styles/index.css">
+    <meta name="description" content="Dr. Hasnâa CHEMSI est médecin spécialiste en psychiatrie de l’enfant et l’adolescent, ex médecin des hôpitaux de France, et de l’hôpital Mère-enfant Abderrahim Harrouchi, Casablanca.">
+    <meta name="keywords" content="Pédopsychiatrie,Téléconsultation,Psychothérapie,Addictologie,Hasnâa CHEMSI">
+    <meta name="author" content="SohaibSoussi">
+    <meta name="robots" content="index, follow">
+    <meta property="og:image" content="./assets/logo.png">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="Dr. Hasnâa CHEMSI est médecin spécialiste en psychiatrie de l’enfant et l’adolescent, ex médecin des hôpitaux de France, et de l’hôpital Mère-enfant Abderrahim Harrouchi, Casablanca.">
+    <meta property="og:locale" content="fr-FR">
+    <meta property="og:title" content="*Dr.Hasnâa CHEMSI*">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@*Dr.Hasnâa CHEMSI*">
+    <meta name="twitter:creator" content="@SohaibSoussi">
+    <meta name="twitter:title" content="home">
+    <meta name="twitter:description" content="Dr. Hasnâa CHEMSI est médecin spécialiste en psychiatrie de l’enfant et l’adolescent, ex médecin des hôpitaux de France, et de l’hôpital Mère-enfant Abderrahim Harrouchi, Casablanca.">
+    <meta name="twitter:image" content="./assets/logo.png">
+
+    
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/fix.css">
     <link rel="stylesheet" href="./styles/slider.css">
     <link rel="stylesheet" href="./styles/afterFooter.css">
     <link rel="stylesheet" href="./styles/footer.css">
-
+    <link rel="stylesheet" href="./styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <link rel="icon" href="./assets/logo-modified.png" type="image/png">
 
-    <title>Document</title>
+    <title>Dr.Hasnâa CHEMSI</title>
     <style>
         
+        header ul li a {
+            color: #ffffff;
+            border: rgb(0, 0, 0) 2px solid;
+            padding: 1px 12px;
+            border-radius: 151px;
+            background: #0b697399;
+        }
+        ul{
+            margin-left: 21px;
+        }
+        .containerA{
+            box-sizing: content-box;
+            display: flex;
+            background-color: rgba(126, 126, 105, 0);
+            height: 70px;
+            font-size: 3rem;
+            padding: 50px 30px;
+            text-align: center;
+        }
+        .containerA p{
+            margin: 0%;
+        }
+        .containerA .words{
+            overflow: hidden;
+        }
+        .containerA .words span{
+            display: block;
+            letter-spacing: 3px;
+            height: 100%;
+            padding-left: 10px;
+            margin-bottom: 1px;
+            color: rgb(161 199 63);
+            border:1px solid rgba(111, 112, 112, 0);
+            animation:spin 5.5s infinite;
+            transition: all 1s ease-in-out;
+        }
+        @keyframes spin {
+            10%{transform: translateY(-112%);}
+            35%{transform: translateY(-100%);}
+            50%{transform: translateY(-212%);}
+            60%{transform: translateY(-200%);}
+            75%{transform: translateY(-312%);}
+            100%{transform: translateY(-300%);}
+        }
+        @media only screen and (max-width: 991px){
+            header ul li a {
+            color: #ffffff;
+            border: transparent 2px solid;
+            padding: 1px 0px;
+            border-radius: 151px;
+            background: #0b697300;
+            }
+            header ul li a{
+                color: #ffffff;
+                font-size: 1.2rem;
+            }
+            header ul.navigation2.active {
+                right: 55%;
+            }
+            header a .plogo{
+                display: none;
+            }
+            .textBox h2 {
+                font-size: 2.1em;
+            }
+            .containerA {
+                font-size: 1.2rem;       
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <a href="#">
-            <img src="../assets/logo.png" alt="LOGO">
+            <img src="../assets/logo.png" alt="LOGO" style="filter: drop-shadow(2px 4px 6px black);border-radius:1000px;padding:2px;" >
+            <p class="plogo" style="font-size: 13px;float:right;letter-spacing: 2.5px;padding-top: 5px;padding-left: 10px;text-decoration: none;color: #62999d;font-weight: bolder;">Dr. Hasnâa CHEMSI <br><span style="letter-spacing: -1px;font-size:9px;">Pédopsychiatre&nbsp;-&nbsp;Addictologue&nbsp;-&nbsp;Psychothérapeute</span></p>
         </a>
             <ul class="navigation">
                 <li><a href="#">Accueil</a></li>
@@ -34,29 +120,44 @@
                     <a href="#" class="hovermenu">Services</a>
                     <div class="sub-menu">
                         <ul class="list1">
-                            <li><a href="#" style="text-decoration:none;">Pédopsychiatrie</a></li>
-                            <li><a href="#what" style="text-decoration:none;">Téléconsultation</a></li>
-                            <li><a href="#" style="text-decoration:none;">psychothérapie</a></li>
-                            <li><a href="#Addictologie" style="text-decoration:none;">Addictologie</a></li>
+                            <li><a href="./services/pedoTerapy.html#s2" style="text-decoration:none;">Pédopsychiatrie</a></li>
+                            <li><a href="./services/contact2.html" style="text-decoration:none;">Téléconsultation</a></li>
+                            <li><a href="./services/pedoTerapy.html#s1" style="text-decoration:none;">Psychothérapie</a></li>
+                            <li><a href="./services/addictologie.html" style="text-decoration:none;">Addictologie</a></li>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <a href="#footer" >Contact</a>
+                    <a href="./contact.html" >Contact</a>
                 </li>
             </ul>
             <ul class="navigation2">
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#article">Actualité</a></li>
-                <li><a href="#">Pédopsychiatrie</a></li>
-                <li><a href="#what">Téléconsultation</a></li>
-                <li><a href="#">psychothérapie</a></li>
-                <li><a href="#Addictologie">Addictologie</a></li>
-                <li><a href="#footer">Contact</a></li>
+                <li><a href="./services/pedoTerapy.html#s2">Pédopsychiatrie</a></li>
+                <li><a href="./services/contact2.html">Téléconsultation</a></li>
+                <li><a href="./services/pedoTerapy.html#s1">Psychothérapie</a></li>
+                <li><a href="./services/addictologie.html">Addictologie</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         <div class="toggle" onclick="toggleMenu()"></div>
         <script src="./Js/header.js"></script>
     </header>
+
+    <section class="firstSection">
+        <div class="textBox" data-aos="fade-left">
+            <h2>Dr. Hasnâa CHEMSI</h2>
+            <div class="containerA">
+                <div class="words">
+                    <span>Psychothérapeute&nbsp;TCC</span>
+                    <span>Addictologue</span>
+                    <span>Pédopsychiatre</span>
+                    <span>Psychothérapeute&nbsp;TCC</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div class="fixedFrame">
         <a href="https://wa.me/212701260887?text=bonjour" target="_blank"><ion-icon name="logo-whatsapp" ></ion-icon></a>
         <a href="https://www.instagram.com/dr.hasnaachemsi/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
@@ -64,65 +165,32 @@
         <a href="https://www.facebook.com/Dr.Chemsi/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
         <a href="https://www.linkedin.com/in/dr-hasn%C3%A2a-chemsi-b1b652127" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>      
     </div>
+
     <div class="chevron">
         <a href="#"><ion-icon name="chevron-up-outline"></ion-icon></a>
     </div>
+
     <div class="call">
         <a href="../contact.html" target="_blank"><ion-icon name="call-outline"></ion-icon></a>
     </div>
-    <div class="slideshow-container">
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <img src="./assets/pic1.webp" style="width:100% ;">
-          <div class="text">Dr H.<span style="color:#83B041;">CHEMSI</span> <br>-Pédopsychiatre<br>-Psychothérapeute<br>-Addictologue</div>
-        </div>
-      
-        <div class="mySlides fade">
-          <img src="./assets/pic2.webp" style="width:100% ">
-        </div>
-      
-        <div class="mySlides fade">
-          <img src="./assets/pic3.webp" style="width:100%">
-        </div>
-      <br>
-      
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-    <script>
-        let slideIndex = 0;
-        showSlides();
 
-        function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}
-            slides[slideIndex-1].style.display = "block";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-    </script>
-        
     <section class="secondSection">
         <div class="apropos">
             <p class="title">
-                A Propos :
+                A PROPOS 
             </p>
             <div class="ligne2"></div>
             <p class="intro">
                 Dr. Hasnâa CHEMSI est médecin spécialiste en psychiatrie de l’enfant et l’adolescent, ex médecin des hôpitaux de France, et de l’hôpital Mère-enfant Abderrahim Harrouchi, Casablanca.
                 <br>
-                Elle est diplômée de la faculté de médecine et de pharmacie de Casablanca (MAROC) et de Rouen (FRANCE).<br>
-                Elle est diplômée en thérapies cognitivo-comportementales (Université de Casablanca)<br>
-                Elle est diplômée en psychologie et psychopathologie du bébé (Université de Casablanca)<br>
-                Elle est diplômée en spécialisation en intervention précoce en Autisme (fondation SUSA, Belgique) : intervention en thérapie psycho-éducative : ABA, TEACCH, Denver, PECS…<br>
-                Elle est diplômée en addictologie (Université Paris-Sud, France)
+                Elle est diplômée : 
+                <br>
+                <ion-icon name="school-outline" style="color:#0d6369;margin-bottom: -3px;"></ion-icon>  la faculté de médecine et de pharmacie de Casablanca (MAROC) et de Rouen (FRANCE).<br>
+                <ion-icon name="school-outline"style="color:#0d6369;margin-bottom: -3px;"></ion-icon>  en thérapies cognitivo-comportementales (Université de Casablanca)<br>
+                <ion-icon name="school-outline"style="color:#0d6369;margin-bottom: -3px;"></ion-icon>  en psychologie et psychopathologie du bébé (Université de Casablanca)<br>
+                <ion-icon name="school-outline"style="color:#0d6369;margin-bottom: -3px;"></ion-icon>  en spécialisation en intervention précoce en Autisme (fondation SUSA, Belgique) :
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;intervention en thérapie psycho-éducative : ABA, TEACCH, Denver, PECS…<br>
+                <ion-icon name="school-outline"style="color:#0d6369;margin-bottom: -3px;"></ion-icon>  en addictologie (Université Paris-Sud, France)
             </p>
             <div class="icon">
                 <ion-icon name="information-circle-outline"></ion-icon>
@@ -131,7 +199,7 @@
         </div>
         <div class="photocit">
             <div class="photo">
-                <img src="./assets/Removed.png" alt="">
+                <img src="./assets/Removed.png" alt="Removed">
             </div>
             <div class="cit">
                 <p>Un voyage de mille lieues commence toujours par un premier pas</p>
@@ -143,7 +211,7 @@
             <div class="ligne2"></div>
             <div class="apropos">
                 <p class="title" id="article">
-                    ARTICLES :
+                    ARTICLES 
                 </p>
             </div>
         </div>
@@ -152,53 +220,55 @@
         <div class="container3">
             <div class="art art1">
                 <p>Autisme</p>
-                <a href="./articles/TSAI.html">clique</a>
+                <a href="./articles/TSAI.html"><ion-icon name="log-out-outline"></ion-icon></a>
             </div>
             <div class="art art2">
                 <p>Integration sensorielle</p>
-                <a href="./articles/integration.html">clique</a>
+                <a href="./articles/integration.html"><ion-icon name="log-out-outline"></ion-icon></a>
             </div>
+            
         </div>
         <div class="container3">
             <div class="art art3">
                 <p>Confinement et écrans</p>
-                <a href="./articles/screen.html">clique</a>
+                <a href="./articles/screen.html"><ion-icon name="log-out-outline"></ion-icon></a>
             </div>
             <div class="art art4">
                 <p>TDHA</p>
-                <a href="./articles/TDHA.html">clique</a>
+                <a href="./articles/TDHA.html"><ion-icon name="log-out-outline"></ion-icon></a>
             </div>
         </div>
         <div class="container3">
             <div class="art art5">
                 <p>La matraitance</p>
-                <a href="./articles/violanceChildren.html">clique</a>
+                <a href="./articles/violanceChildren.html"><ion-icon name="log-out-outline"></ion-icon></a>
             </div>
             <div class="art art6">
                 <p>Automutilations</p>
-                <a href="">clique</a>
+                <a href="./articles/automutilation.html"><ion-icon name="log-out-outline"></ion-icon></a>
             </div>
         </div>
     </section>
     <div class="lastContainer">
-        <p>Nos Valeurs</p>
+        <p class="title">NOS VALEURS</p>
         <div class="after-footer">
-            <div class="imgAndText"><img src="./assets/analyses-daudience-internet.png" alt=""><p>Analyse</p></div>
-            <div class="imgAndText"><img src="./assets/bienveillance.png" alt=""><p>Bienveillance</p></div>
-            <div class="imgAndText"><img src="./assets/ponctualite.png" alt=""><p>Ponctualité</p></div>
-            <div class="imgAndText"><img src="./assets/la-communication.png" alt=""><p>Communication</p></div>
-            <div class="imgAndText"><img src="./assets/ecoutez.png" alt=""><p>Écoute</p></div>
-            <div class="imgAndText"><img src="./assets/767401.png" alt=""><p>soutien</p></div>
+            <div class="imgAndText"><img src="./assets/analyses-daudience-internet.png" alt="analyses"><p>Analyse</p></div>
+            <div class="imgAndText"><img src="./assets/bienveillance.png" alt="bienveillance"><p>Bienveillance</p></div>
+            <div class="imgAndText"><img src="./assets/ponctualite.png" alt="ponctualite"><p>Ponctualité</p></div>
+            <div class="imgAndText"><img src="./assets/la-communication.png" alt="communication"><p>Communication</p></div>
+            <div class="imgAndText"><img src="./assets/ecoutez.png" alt="ecoutez"><p>Écoute</p></div>
+            <div class="imgAndText"><img src="./assets/767401.png" alt="soutien"><p>soutien</p></div>
         </div>
     </div>
     <footer id="footer">
         <div class="container">
             <div class="container2">
                 <p>
-                    <span style="color:#83B041;">Coordonées :</span><br>
-                    Tél : <span style="color:#83B041;">0701260887, 052865093</span><br>
-                    Adresse : quartier des hôpitaux, casa<br>
-                    Mail : <span style="color:#83B041;">hasnaa.chemsi</span>@gmail.com<br>
+                    <span style="color:#83B041;font-weight: bold;letter-spacing: 1px;">Coordonées :</span><br>
+                    <ion-icon name="call-outline" style="color:#0d6369;margin-bottom: -3px;"></ion-icon> : <span style="color:#ffffff;">0701260887&nbsp;/&nbsp;052865093</span><br>
+                    <ion-icon name="location-outline"style="color:#0d6369;margin-bottom: -3px;" ></ion-icon> : Quartier des hôpitaux, Casablanca<br>
+                    <ion-icon name="mail-outline"style="color:#0d6369;margin-bottom: -3px;"></ion-icon> : <span style="color:#ffffff;">hasnaa.chemsi</span>@gmail.com<br><br>
+                    <p style="color:#83B041;font-weight: bold;letter-spacing: 1px;">Suivez nous sur :</p>
                 </p>
                 <div class="iconBox">
                     <a href="https://wa.me/212701260887?text=bonjour" target="_blank"><ion-icon name="logo-whatsapp" ></ion-icon></a>
