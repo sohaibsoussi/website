@@ -16,7 +16,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 10px 20px;
+    padding: 10px 20px 10px 0;
     color: var(--gray);
     width: 100%;
     z-index: 11;
@@ -32,7 +32,7 @@ header ul{
 }
 header ul li{
     list-style:none;
-    width: 200px;
+    width: 182px;
     margin: 11px 0px;
 }
 
@@ -41,7 +41,7 @@ header ul li a{
     display: inline-block;
     margin: 0px 25px 7px 0;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .list1 {
@@ -89,6 +89,7 @@ ul li:hover .list1{
 @media  only screen and  (max-width:991px){
     header{
         justify-content:center;
+        position: inherit;
     }
     header a img{
         max-width: 5.3rem;
