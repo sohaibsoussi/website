@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/fix.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/end.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body{
+            background-color: #ffffff;
+        }
+        
+        section {
+            margin: 65px 30px;
+            max-width: 886px;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            flex-direction: column;
+            margin-left: 25%;
+            margin-top: 99px;
+        }
+        strong {
+            display: table;
+            margin: 0%;
+        }
+        a{
+            color: #47A6E5;
+        }
+        header ul li a {
+            color: #ffffff;
+            border: white 2px solid;
+            padding: 1px 12px;
+            border-radius: 151px;
+            background: #0b697347;
+        }
+        ul{
+            margin-left: 21px;
+        }
+        b,strong,h3,h2{
+            color: #83B041;
+        }
+        .firstSection {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 79vh;
+            width: 100%;
+            background: linear-gradient( rgba(0, 0, 0, 75%), rgba(0, 0, 0, 0.333) ),url(../assets/autisme.webp) no-repeat center/cover;
+            color: var(--white);
+            position: relative;
+            margin-top: 0;
+        }
+        .space{
+            margin-left: 26px;
+        }
+        .space2{
+            margin-left: 31px;
+        }
+        @media only screen and (max-width: 991px){
+            section {
+                margin: 65px 30px;
+                max-width: 886px;
+            }
+            .firstSection{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 34vh;
+                width: 100%;
+                background: linear-gradient( rgba(0, 0, 0, 75%), rgba(0, 0, 0, 0.333) ),url(../assets/autisme.webp) no-repeat left/cover;
+                color: var(--white);
+                position: relative;
+                
+            }
+            strong {
+                display: table;
+                margin: 0%;
+            }
+            a{
+                color: #47A6E5;
+            }
+            header ul li a {
+                color: #ffffff;
+                border: transparent 2px solid;
+                padding: 1px 0px;
+                border-radius: 151px;
+                background: #0b697300;
+            }
+            header ul li a{
+                color: #ffffff;
+                font-size: 1.2rem;
+            }
+            header ul.navigation2.active {
+                right: 55%;
+            }
+            header a .plogo{
+                display: none;
+            }
+            .textBox h2 {
+                font-size: 2.3em;
+            }
+            .containerA {
+                font-size: 1.3rem;       
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#">
+            <img src="../assets/logo.png" alt="LOGO" style="filter: drop-shadow(2px 4px 6px black);border-radius:1000px;padding:2px;" >
+            <p class="plogo" style="font-size: 13px;float:right;letter-spacing: 2.5px;padding-top: 5px;padding-left: 10px;text-decoration: none;color: #62999d;font-weight: bolder;">Dr. Hasnâa CHEMSI <br><span style="letter-spacing: -1px;font-size:9px;">Pédopsychiatre&nbsp;-&nbsp;Addictologue&nbsp;-&nbsp;Psychothérapeute</span></p>
+        </a>
+            <ul class="navigation">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../index.html#article">Actualité</a></li>
+                <li>
+                    <a href="#" class="hovermenu">Services</a>
+                    <div class="sub-menu">
+                        <ul class="list1">
+                            <li><a href="../services/pedoTerapy.html" style="text-decoration:none;">Pédopsychiatrie</a></li>
+                            <li><a href="../services/contact2.html" style="text-decoration:none;">Téléconsultation</a></li>
+                            <li><a href="../services/pedoTerapy.html" style="text-decoration:none;">Psychothérapie</a></li>
+                            <li><a href="../services/addictologie.html" style="text-decoration:none;">Addictologie</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="../contact.html" >Contact</a>
+                </li>
+            </ul>
+            <ul class="navigation2">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../index.html#article">Actualité</a></li>
+                <li><a href="../services/pedoTerapy.html">Pédopsychiatrie</a></li>
+                <li><a href="../services/contact2.html">Téléconsultation</a></li>
+                <li><a href="../services/pedoTerapy.html">Psychothérapie</a></li>
+                <li><a href="../services/addictologie.html">Addictologie</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <script src="../Js/header.js"></script>
+    </header>
+    <div class="fixedFrame">
+        <a href="https://wa.me/212701260887?text=bonjour" target="_blank"><ion-icon name="logo-whatsapp" ></ion-icon></a>
+        <a href="https://www.instagram.com/dr.hasnaachemsi/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="https://www.youtube.com/channel/UCn5X4iNgLAO260yvnjESuow" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+        <a href="https://www.facebook.com/Dr.Chemsi/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="https://www.linkedin.com/in/dr-hasn%C3%A2a-chemsi-b1b652127" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>      
+    </div>
+    <div class="chevron">
+        <a href="#"><ion-icon name="chevron-up-outline"></ion-icon></a>
+    </div>
+    <div class="call">
+        <a href="../contact.html" target="_blank"><ion-icon name="call-outline"></ion-icon></a>
+    </div>
+    <article class="firstSection">
+        <h1></h1>
+    </article>
+    <section>
+        
+        <h1><strong>&nbsp; Les troubles cognitifs dans le trouble du spectre de l&rsquo;autisme </strong></h1>
+        <br>
+        <p><strong>La th&eacute;orie de l&rsquo;esprit:</strong></p>
+        <br>
+        <p>Trouble dans la capacit&eacute; &agrave; attribuer &agrave; autrui des &eacute;tats mentaux, &agrave; deviner les pens&eacute;es et les intentions, &agrave; envisager le point de vue de l&rsquo;autre. Anomalies ind&eacute;pendantes du niveau de fonctionnement intellectuel.</p>
+        <br>
+        <p>Pour les personnes avec TSA:</p>
+        <ul>
+            <br>
+            <li>Difficult&eacute; de comprendre les symboles sociaux.</li>
+            <br>
+            <li>Difficult&eacute; d&rsquo;aller au del&agrave; de l&rsquo;information litt&eacute;rale.</li>
+        
+        </ul>
+        <br>
+        <p>&laquo; Comprendre scientifiquement ce que les autres comprennent de fa&ccedil;on intuitive&raquo; M. S&eacute;gar</p>
+        
+        <p><strong>&nbsp;</strong></p>
+        
+        <p><strong>Faiblesse de la coh&eacute;rence centrale&nbsp;:</strong></p>
+        <br>
+        <p>La &ldquo;coh&eacute;rence centrale&rdquo; r&eacute;f&egrave;re au fait d&rsquo;int&eacute;grer des informations &agrave; un contexte pour leur donner un sens : avoir des indices diff&eacute;rents, les rassembler pour aboutir &agrave; une interpr&eacute;tation coh&eacute;rente en fonction du contexte. Tendance &agrave; relier les &eacute;l&eacute;ments entre eux, &agrave; donner un sens.</p>
+        <br>
+        <p>Pour les personnes avec TSA:</p>
+        
+        <ul>
+            <br>
+            <li>Approche fragment&eacute;e de l&rsquo;information</li>
+            <br>
+            <li>Difficult&eacute; pour donner un sens global</li>
+            <br>
+            <li>Attention sur les d&eacute;tails</li>
+            <br>
+            <li>Difficult&eacute; pour s&rsquo;adapter aux diff&eacute;rentes situations</li>
+            
+        </ul>
+        <p><strong>&nbsp;</strong></p>
+        
+        <p><strong>Les fonctions ex&eacute;cutives&nbsp;:</strong></p>
+        <br>
+        <p>Un terme g&eacute;n&eacute;rique qui recouvre des comp&eacute;tences de haut niveau:</p>
+        <br>
+        
+        <ul>
+            <li>M&eacute;moire de travail</li>
+            <br>
+            <li>Inhibition</li>
+            <br>
+            <li>Flexibilit&eacute; mentale</li>
+            <br>
+            <li>Planification/organisation</li>
+        </ul>
+        <p>&nbsp;</p>
+
+        <p><strong><u>M&eacute;moire de travail :</u></strong></p>
+        <br>
+        <ul>
+            <li>Traiter et manipuler mentalement des infos pour produire un r&eacute;sultat</li>
+        </ul>
+        <p>&nbsp;</p>
+        
+        <p><strong><u>Inhibition :</u></strong></p>
+        <br>
+        <ul>
+            <li>Capacit&eacute; &agrave; r&eacute;sister aux distraction et impulsions</li>
+        </ul>
+        <p>&nbsp;</p>
+        
+        <p><strong><u>Flexibilit&eacute; mentale:</u></strong></p>
+        <br>
+        <ul>
+            <li>Pouvoir alterner entre des &eacute;tats cognitifs pour pouvoir changer d&rsquo;attitude, de perspective ou de comportement&agrave; adaptation au changement (nouveaut&eacute; et impr&eacute;vus)</li>
+        </ul>
+        <br>
+        <p><strong><u>Planification/organisation :</u></strong></p>
+        <br>
+        <ul>
+            <li>Analyser le probl&egrave;me &agrave; r&eacute;soudre et d&eacute;finir les priorit&eacute;s d&rsquo;actions</li>
+            <br>
+            <li>S&eacute;lectionner les strat&eacute;gies efficaces et d&eacute;cider de l&rsquo;ordre des &eacute;tapes</li>
+            <br>
+        </ul>
+        
+        <p>Pour les personnes avec TSA:</p>
+        <br>
+        <ul>
+            <li>Difficult&eacute;s &agrave; anticiper, &laquo; voir les choses dans le temps &raquo;</li>
+            <br>
+            <li>Difficult&eacute;s pour r&eacute;soudre un probl&egrave;me</li>
+            <br>
+            <li>Comportements r&eacute;p&eacute;titifs</li>
+            <br>
+            <li>Besoin de structure, r&eacute;sistance aux changements</li>
+            <br>
+        </ul>
+    </section>
+    <div class="boutton2">
+        <svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="900" height="600" fill="#16656c"></rect><g fill="#9ECC45"><circle r="147" cx="219" cy="137"></circle><circle r="65" cx="703" cy="441"></circle><circle r="119" cx="233" cy="555"></circle></g></svg>
+        <p class="title2">NOUS SOMMES A VOTRE ECOUTE</p>
+        <a class="btn2"  href="../contact.html">
+            <ion-icon name="logo-whatsapp" ></ion-icon>
+            <p>Réserver un RDV</p>
+        </a>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="container2">
+                <p>
+                    <span style="color:#83B041;font-weight: bold;letter-spacing: 1px;display: block;">Coordonées :</span><br>
+                    <ion-icon name="call-outline" style="color:#0d6369;margin-bottom: -3px;"></ion-icon> : <span style="color:#ffffff;">(+212)&nbsp;701260887&nbsp;</span><br><span class="space" style="color:#ffffff">&nbsp;(+212)&nbsp;52865093</span><br>
+                    <ion-icon name="location-outline"style="color:#0d6369;margin-bottom: -3px;" ></ion-icon> : Quartier des hôpitaux <br><span class="space2" style="color:#ffffff">Casablanca</span><br>
+                    <ion-icon name="mail-outline"style="color:#0d6369;margin-bottom: -3px;"></ion-icon> : <span style="color:#ffffff;">hasnaa.chemsi</span>@gmail.com<br><br>
+                    <p style="color:#83B041;font-weight: bold;letter-spacing: 1px;">Suivez nous sur :</p>
+                </p>
+                <div class="iconBox">
+                    <a href="https://wa.me/212701260887?text=bonjour" target="_blank"><ion-icon name="logo-whatsapp" ></ion-icon></a>
+                    <a href="https://www.instagram.com/dr.hasnaachemsi/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.youtube.com/channel/UCn5X4iNgLAO260yvnjESuow" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                    <a href="https://www.facebook.com/Dr.Chemsi/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/dr-hasn%C3%A2a-chemsi-b1b652127" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d44078.47805837659!2d-7.673192580269687!3d33.58440566169001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%3A%20quartier%20des%20h%C3%B4pitaux%2C%20casa%20!5e0!3m2!1sfr!2sma!4v1650523220005!5m2!1sfr!2sma"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            </div>    
+        </div>
+        <div class="signature">
+            <a href="https://www.linkedin.com/in/sohaib-soussi-034216212/" target="_blank">©SOHAIBSOUSSIPRODUCTION</a>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
