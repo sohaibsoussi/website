@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400&family=Roboto:wght@100;400&family=Sacramento&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap');
 :root{
     --blue:#139cf7;
     --greenC:#9ECC45;
@@ -89,10 +89,11 @@ section{
     overflow: hidden;
 }
 
-.secondSection .apropos .title{
+.secondSection .apropos .title1{
     margin: 20px 0;
     font-size: 35px;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
     color: var(--greenF);
 }
 
@@ -450,7 +451,7 @@ textarea{
         text-align: center;
     }
     
-    .secondSection .apropos .title {
+    .secondSection .apropos .title1 {
         margin-left: 24px;
         text-align: left;
     }
@@ -542,4 +543,3 @@ textarea{
         width: 322px;
     }  
 }
-
