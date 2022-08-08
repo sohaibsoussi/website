@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/fix.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/end.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <title>Les signes d&rsquo;alerte du trouble du spectre de l&rsquo;autisme</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body{
+            background-color: #ffffff;
+        }
+        
+        section {
+            margin: 65px 30px;
+            max-width: 886px;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            flex-direction: column;
+            margin-left: 25%;
+            margin-top: 99px;
+        }
+        strong {
+            display: table;
+            margin: 0%;
+        }
+        a{
+            color: #47A6E5;
+        }
+        header ul li a {
+            color: #ffffff;
+            border: white 2px solid;
+            padding: 1px 12px;
+            border-radius: 151px;
+            background: #0b697347;
+        }
+        ul{
+            margin-left: 21px;
+        }
+        b,strong,h3,h2{
+            color: #83B041;
+        }
+        .firstSection {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 79vh;
+            width: 100%;
+            background: linear-gradient( rgba(0, 0, 0, 75%), rgba(0, 0, 0, 0.333) ),url(../assets/autisme.webp) no-repeat center/cover;
+            color: var(--white);
+            position: relative;
+            margin-top: 0;
+        }
+        .space{
+            margin-left: 26px;
+        }
+        .space2{
+            margin-left: 31px;
+        }
+        .fleche {
+            font-size: 11px;
+        }
+        @media only screen and (max-width: 991px){
+            section {
+                margin: 65px 30px;
+                max-width: 886px;
+            }
+            .firstSection{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 34vh;
+                width: 100%;
+                background: linear-gradient( rgba(0, 0, 0, 75%), rgba(0, 0, 0, 0.333) ),url(../assets/autisme.webp) no-repeat left/cover;
+                color: var(--white);
+                position: relative;
+                
+            }
+            strong {
+                display: table;
+                margin: 0%;
+            }
+            a{
+                color: #47A6E5;
+            }
+            header ul li a {
+                color: #ffffff;
+                border: transparent 2px solid;
+                padding: 1px 0px;
+                border-radius: 151px;
+                background: #0b697300;
+            }
+            header ul li a{
+                color: #ffffff;
+                font-size: 1.2rem;
+            }
+            header ul.navigation2.active {
+                right: 55%;
+            }
+            header a .plogo{
+                display: none;
+            }
+            .textBox h2 {
+                font-size: 2.3em;
+            }
+            .containerA {
+                font-size: 1.3rem;       
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#">
+            <img src="../assets/logo.png" alt="LOGO" style="filter: drop-shadow(2px 4px 6px black);border-radius:1000px;padding:2px;" >
+            <p class="plogo" style="font-size: 13px;float:right;letter-spacing: 2.5px;padding-top: 5px;padding-left: 10px;text-decoration: none;color: #62999d;font-weight: bolder;">Dr. Hasnâa CHEMSI <br><span style="letter-spacing: -1px;font-size:9px;">Pédopsychiatre&nbsp;-&nbsp;Addictologue&nbsp;-&nbsp;Psychothérapeute</span></p>
+        </a>
+            <ul class="navigation">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../index.html#article">Actualité</a></li>
+                <li>
+                    <a href="#" class="hovermenu">Services</a>
+                    <div class="sub-menu">
+                        <ul class="list1">
+                            <li><a href="../services/pedopsichiatrie.html" style="text-decoration:none;">Pédopsychiatrie</a></li>
+                            <li><a href="../services/contact2.html" style="text-decoration:none;">Téléconsultation</a></li>
+                            <li><a href="../services/psychoterapie.html" style="text-decoration:none;">Psychothérapie</a></li>
+                            <li><a href="../services/addictologie.html" style="text-decoration:none;">Addictologie</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="../contact.html" >Contact</a>
+                </li>
+            </ul>
+            <ul class="navigation2">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../index.html#article">Actualité</a></li>
+                <li><a href="../services/pedopsichiatrie.html">Pédopsychiatrie</a></li>
+                <li><a href="../services/contact2.html">Téléconsultation</a></li>
+                <li><a href="../services/psychoterapie.html">Psychothérapie</a></li>
+                <li><a href="../services/addictologie.html">Addictologie</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <script src="../Js/header.js"></script>
+    </header>
+    <div class="fixedFrame">
+        <a href="https://wa.me/212701260887?text=bonjour" target="_blank"><ion-icon name="logo-whatsapp" ></ion-icon></a>
+        <a href="https://www.instagram.com/dr.hasnaachemsi/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="https://www.youtube.com/channel/UCn5X4iNgLAO260yvnjESuow" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+        <a href="https://www.facebook.com/Dr.Chemsi/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="https://www.linkedin.com/in/dr-hasn%C3%A2a-chemsi-b1b652127" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>      
+    </div>
+    <div class="chevron">
+        <a href="#"><ion-icon name="chevron-up-outline"></ion-icon></a>
+    </div>
+    <div class="call">
+        <a href="../contact.html" target="_blank"><ion-icon name="call-outline"></ion-icon></a>
+    </div>
+    <article class="firstSection">
+        <h1></h1>
+    </article>
+    <section>
+        <h1><strong>Les signes d&rsquo;alerte du trouble du spectre de l&rsquo;autisme</strong></h1>
+        <br>
+        <p><ion-icon name="arrow-forward-outline" class="fleche"></ion-icon>&nbsp;Les troubles du spectre de l&rsquo;autisme sont des troubles pr&eacute;coces : les signes sont habituellement r&eacute;unis dans les trois premi&egrave;res ann&eacute;es de la vie.</p>
+        <br>
+        <p><ion-icon name="arrow-forward-outline" class="fleche"></ion-icon>&nbsp;La fa&ccedil;on dont les TSA se manifestent est multiple avec des profils cliniques h&eacute;t&eacute;rog&egrave;nes r&eacute;sultant de la vari&eacute;t&eacute; des sympt&ocirc;mes, du degr&eacute; d&rsquo;autisme pr&eacute;sent&eacute;, des pathologies et troubles &eacute;ventuellement associ&eacute;s, de la pr&eacute;sence ou non d&rsquo;une d&eacute;ficience intellectuelle et de l&rsquo;&eacute;volution propre de la personne.</p>
+        <br>
+        <p><strong>R&eacute;agir d&egrave;s les premiers signes d&rsquo;alerte : une vigilance de tous les acteurs de premi&egrave;re ligne</strong></p>
+        
+        <ul>
+            <br>
+            <li>Quel que soit l&rsquo;&acirc;ge : l&rsquo;inqui&eacute;tude des parents concernant le d&eacute;veloppement de leur enfant, notamment en termes de communication sociale et de langage.</li>
+            <br>
+            <li>R&eacute;gression des habilet&eacute;s langagi&egrave;res ou relationnelles, en l&rsquo;absence d&rsquo;anomalie &agrave; l&rsquo;examen neurologique.</li>
+            <br>
+            <li>Les parents et tout professionnel de 1re ligne (professionnels de santé, professionnels du secteur de la petite enfance, enseignants, psychologues, etc.) sont susceptibles de rep&eacute;rer, observer, d&eacute;celer un ou plusieurs signes inhabituels pouvant indiquer une particularit&eacute; de d&eacute;veloppement de l&rsquo;enfant.</li>
+            <br>
+            <li>L&rsquo;exploration de la communication, au m&ecirc;me titre que l&rsquo;exploration de la motricit&eacute; (globale et fine) et du langage, ainsi que la recherche des signes d&rsquo;alerte de TSA sont recommand&eacute;es dans le cadre de l&rsquo;examen m&eacute;dical effectu&eacute; &agrave; chaque examen obligatoire pour le suivi de l&rsquo;&eacute;tat de sant&eacute; des enfants de 0 &agrave; 6 ans.</li>
+        </ul>
+        <br>
+        <p><strong>Signes cliniques pr&eacute;coces&nbsp;: </strong></p>
+        <br>
+        <ul>
+            
+            <li>&Agrave; partir de quel &acirc;ge peut-on esp&eacute;rer diagnostiquer un b&eacute;b&eacute; autiste? Et sur quels signes?</li>
+            <br>
+            <li>Le diagnostic d&rsquo;autisme est d&eacute;licat avant l&rsquo;&acirc;ge de 24 mois, il n&rsquo;y a pas de signes cliniques sp&eacute;cifiques, le mode de d&eacute;but est progressif et la discr&eacute;tion des premiers signes peuvent tromper.</li>
+            <br>
+            <li>Parfois encore c&rsquo;est seulement au d&eacute;but de la deuxi&egrave;me ann&eacute;e que des parents pourtant attentifs commenceront &agrave; se douter de l&rsquo;existence de troubles.&nbsp;</li>
+            <br>
+            <li>Signes pr&eacute;coce de l&rsquo;autisme selon l&rsquo;&acirc;ge :
+                
+                <ul>
+                    <br>
+                    <li><strong><u>Entre z&eacute;ro et six mois</u> :</strong>
+                        <br>
+                        <ul>
+        
+                            <li>Indiff&eacute;rence au monde sonore: impression de surdit&eacute;.</li>
+                            <br>
+                            <li>Anomalie du regard: peut &ecirc;tre bref, mal dirig&eacute;, p&eacute;riph&eacute;rique, l&rsquo;enfant ne suit pas les personnes mais peut fixer longuement des d&eacute;tails, strabisme, regard par coups d&rsquo;&oelig;il.</li>
+                            <br>
+                            <li>Absence ou raret&eacute; du sourire.</li>
+                            <br>
+                            <li>Anomalie du comportement: b&eacute;b&eacute; trop calme ou trop excit&eacute;.</li>
+                            <br>
+                            <li>Troubles du sommeil s&eacute;v&egrave;res : on rencontre les deux types d&rsquo;insomnies pr&eacute;coces :
+                                
+                                <ul>
+                                    <br>
+                                    <li>L&rsquo;insomnie calme avec les yeux grands ouverts est rare.</li>
+                                    <br>
+                                    <li>L&rsquo;insomnie agit&eacute;e avec r&eacute;veils en hurlant et manifestations auto-agressives.</li>
+                                    <br>
+                                </ul>
+        
+                            </li>
+        
+            <li>Troubles de l&rsquo;alimentation pr&eacute;coces: d&eacute;faut de succion, l&rsquo;enfant prend mal la t&eacute;tine ou le mamelon&nbsp;; ou bien coordination d&eacute;faillante entre ses mouvements de succion et de d&eacute;glutition&nbsp;; r&eacute;gurgitations post-prandiales, anorexie tr&egrave;s pr&eacute;coces.</li>
+            <br>
+
+            
+            <li>Troubles sphinct&eacute;riens: constipations fonctionnelles pr&eacute;coces due &agrave; une r&eacute;tention des mati&egrave;res f&eacute;cales.</li>
+            
+            
+            <br>
+            <li>Absence d&rsquo;attitudes anticipatrices.</li>
+            
+            
+            <br>
+            <li>Absence d&rsquo;&eacute;change avec la m&egrave;re.</li>
+            
+            
+            <br>
+            
+            <li>Absence de vocalisation.</li>
+            
+            <br>
+            
+            <li>Il ne s&rsquo;oriente pas vers la voix.</li>
+            
+            <br>
+            
+            <li>R&eacute;action &agrave; des changements minimes de luminosit&eacute;.</li>
+            <br>
+            
+            <li>Anomalie de la motricit&eacute;: hypotonie/hypertonie.</li>
+            
+            <br>
+            
+            <li>D&eacute;faut d&rsquo;ajustement de la position dans les bras de la m&egrave;re.</li>
+            <br>
+        </ul>
+
+        </li>
+            
+            <li><strong><u>Entre six et douze mois</u> :</strong>
+            <br>
+            
+        <ul>
+        
+            <li>Attitudes bizarres: marche sur la pointe des pieds, tournoiements.</li>
+            <br>
+            <li>Activit&eacute;s solitaires : jeux de doigts et de mains devant les yeux, des balancements.</li>
+            <br>
+            <li>Qu&ecirc;te active de stimuli sensoriels: fixation du regard sur des lumi&egrave;res, des objets qui tournent.</li>
+            <br>
+            <li>Utilisation inhabituelle des objets (le b&eacute;b&eacute; les gratte, les frotte, les flaire, les faits rouler, les faire tomber de mani&egrave;re r&eacute;p&eacute;titive).</li>
+            <br>
+            <li>Absence d&rsquo;int&eacute;r&ecirc;t pour les personnes (d&eacute;faut de contact&nbsp;: pauvre ou inexistant).</li>
+            <br>
+            <li>R&eacute;action pauvre ou absente lors des retrouvailles.</li>
+            <br>
+            <li>Peu ou pas d&rsquo;&eacute;missions vocales.</li>
+            <br>
+            <li>R&eacute;action absente aux bruits ou inconstante.</li>
+            <br>
+            <li>Troubles alimentaires tardives&nbsp;:
+            
+        <ul>
+            <br>
+            <li>Difficult&eacute;s de diversification de l&rsquo;alimentation.</li>
+            <br>
+            <li>Refus de mastication ou bien absorption alimentaire indiff&eacute;renci&eacute;.</li>
+            <br>
+        </ul>
+        
+    </li>
+
+    <li>Absence d&rsquo;angoisse lors de la s&eacute;paration et d&rsquo;angoisse de l&rsquo;&eacute;tranger.</li>
+    <br>
+    <li>Confirmation des particularit&eacute;s motrices&nbsp;: Anomalies de la motricit&eacute; et du tonus :
+        <ul>
+            <br>
+            <li>D&eacute;faut d&rsquo;attitude anticipatrice.</li>
+            <br>
+            <li>D&eacute;faut d&rsquo;ajustement corporel et d&rsquo;agrippement.</li>
+            <br>
+            <li>Insuffisance du contr&ocirc;le postural</li>
+            <br>
+            <li>Rigidit&eacute;.</li>
+            <br>
+            <li>Mouvements ont peu de rythmicit&eacute; et de fluidit&eacute;.</li>
+            <br>
+        </ul>
+        
+    </li> 
+</ul>
+<li><strong><u>Entre un et deux ans:</u></strong>
+    <br>
+    <ul>
+
+        <li>Non-d&eacute;veloppement du langage :
+            
+            <ul>
+                <br>
+                <li>Apparition tardive des premiers mots, le plus souvent au-del&agrave; de deux ans.</li>
+                <br>
+                <li>Absence du &laquo;&nbsp;<b>je</b>&nbsp;&raquo;.</li>
+                <br>
+            </ul>
+
+        </li>
+
+    </ul>
+
+</li>
+</li>
+
+</ul>
+
+</li>
+
+</ul>
+        <ul>
+
+            <ul>
+
+
+                <li>Jeux pauvres avec absence de jeux de faire semblant.&nbsp;</li>
+                <br>
+                <li>St&eacute;r&eacute;otypies&nbsp;: ils ne sont pas faciles &agrave; trouver dans la premi&egrave;re ann&eacute;e de vie (remuer les doigts devant le visage, agiter les bras comme un battement d&rsquo;ailes, balancements&nbsp;&hellip;) et int&eacute;r&ecirc;ts particuliers.</li>
+                <br>
+                <li>Indiff&eacute;rence &agrave; l&rsquo;&eacute;gard du monde ext&eacute;rieur, aussi bien &agrave; l&rsquo;&eacute;gard des personnes (l&rsquo;absence de pleurs lorsqu&rsquo;on quitte l&rsquo;enfant, absence de babillage).</li>
+                <br>
+                <li>Fascinations tr&egrave;s vives (pour des mouvements, des lumi&egrave;res, la musique).</li>
+                <br>
+                <li>Automutilations, agressivit&eacute;.</li>
+                <br>
+                <li>Absence de pointage.</li>
+                <br>
+                <li>Phobies massives et mal organis&eacute;es&nbsp;: phobies des bruits et en particulier des bruits faits par les appareils m&eacute;nagers (aspirateur, machine &agrave; laver, etc.).</li>
+                <br>
+                <li>Trouble de l&rsquo;attention conjointe.</li>
+                <br>
+                <li>Absence de regard r&eacute;f&eacute;rentiel.</li>
+                <br>
+                <li>Absence de pointage proto-d&eacute;claratif.</li>
+                <br>
+                <li>Retard des acquisitions.</li>
+                <br>
+                <li>L&rsquo;enfant ne manifeste aucune r&eacute;action &agrave; des paroles descriptives.</li>
+                <br>
+                <li>L&rsquo;enfant n&rsquo;essaie pas spontan&eacute;ment de faire regarder quelque chose &agrave; distance.</li>
+                <br>
+                <li>Pauvret&eacute; des jeux, absence d&rsquo;imitation.</li>
+                <br>
+                <li>Comportements bizarres: marche sur la pointe des pieds, tournoiements.</li>
+                <br>
+            </ul>
+
+        </ul>
+
+        <ul>
+
+            <li>Les signes pr&eacute;coces pris isol&eacute;ment ne sont ni pathognomoniques, ni m&ecirc;me sp&eacute;cifiques et constants.</li>
+            <br>
+            <li>Ils peuvent &ecirc;tre communs avec d&rsquo;autres tableaux cliniques de jeunes b&eacute;b&eacute;s.</li>
+            <br>
+            <li>La plupart de ces signes doivent &ecirc;tre interpr&eacute;t&eacute;s en fonction du niveau global du d&eacute;veloppement.</li>
+            <br>
+        </ul>
+
+        <p>Les plus caract&eacute;ristiques peuvent &ecirc;tre inconstants et/ou tardifs (st&eacute;r&eacute;otypies, automutilation&hellip;), ou bien d&rsquo;observation moins &eacute;vidente (anomalies du regard, hypotonie et dystonie, faible r&eacute;action aux sons).</p>
+        <br>
+        <p><strong><u>Au-del&agrave; de 18 mois et jusqu&rsquo;&agrave; l&rsquo;adolescence&nbsp;:</u></strong></p>
+        <ul>
+            <br>
+            <li>Signes pr&eacute;c&eacute;dents ou difficult&eacute;s relationnelles pr&eacute;coces et persistantes (difficult&eacute;s &agrave; cr&eacute;er des liens amicaux, &agrave; engager, suivre ou participer &agrave; une conversation, &agrave; prendre des initiatives sociales (sorties, invitations&hellip;), &agrave; comprendre ou interpr&eacute;ter des intentions, des expressions langagi&egrave;res, le second degr&eacute;, etc.) combin&eacute;es &agrave; des particularit&eacute;s dans le comportement et les int&eacute;r&ecirc;ts prenant un caract&egrave;re anormalement r&eacute;p&eacute;titif, restreint et st&eacute;r&eacute;otyp&eacute;.</li>
+            <br>
+            <li>Les signes et les sympt&ocirc;mes ont pu &ecirc;tre masqu&eacute;s par les m&eacute;canismes de compensation de l&rsquo;enfant ou d&rsquo;adolescent et/ou par un environnement favorable.</li>
+            <br>
+            <li>L&rsquo;autisme peut ne pas &ecirc;tre reconnu chez des enfants ou des adolescents verbaux ou chez des enfants ou des adolescents ayant une d&eacute;ficience intellectuelle.</li>
+            <br>
+        </ul>
+
+        <p>&nbsp;</p>
+
+        <p><ion-icon name="arrow-forward-outline" class="fleche"></ion-icon>&nbsp; L&rsquo;autisme peut &ecirc;tre sous-diagnostiqu&eacute; chez les filles, qui pourraient avoir un profil et un niveau d&rsquo;alt&eacute;ration diff&eacute;rents de ceux des gar&ccedil;ons avec TSA.</p>
+
+        <p>&nbsp;</p>
+        <br>
+        <p><ion-icon name="arrow-forward-outline" class="fleche"></ion-icon>&nbsp;Les parents et tout professionnel de 1re ligne (professionnels de santé, professionnels du secteur de la petite enfance, enseignants, psychologues, etc.) sont susceptibles de rep&eacute;rer, observer, d&eacute;celer un ou plusieurs signes inhabituels pouvant indiquer une particularit&eacute; de d&eacute;veloppement de l&rsquo;enfant.</p>
+
+    </section>
+
+    <div class="boutton2">
+        <svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="900" height="600" fill="#16656c"></rect><g fill="#9ECC45"><circle r="147" cx="219" cy="137"></circle><circle r="65" cx="703" cy="441"></circle><circle r="119" cx="233" cy="555"></circle></g></svg>
+        <p class="title2">NOUS SOMMES A VOTRE ECOUTE</p>
+        <a class="btn2"  href="../contact.html">
+            <ion-icon name="logo-whatsapp" ></ion-icon>
+            <p>Réserver un RDV</p>
+        </a>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="container2">
+                <p>
+                    <span style="color:#83B041;font-weight: bold;letter-spacing: 1px;display: block;">Coordonées :</span><br>
+                    <ion-icon name="call-outline" style="color:#0d6369;margin-bottom: -3px;"></ion-icon> : <span style="color:#ffffff;">(+212)&nbsp;701260887&nbsp;</span><br><span class="space" style="color:#ffffff">&nbsp;(+212)&nbsp;522865093</span><br>
+                    <ion-icon name="location-outline"style="color:#0d6369;margin-bottom: -3px;" ></ion-icon> : Quartier des hôpitaux <br><span class="space2" style="color:#ffffff">Casablanca</span><br>
+                    <ion-icon name="mail-outline"style="color:#0d6369;margin-bottom: -3px;"></ion-icon> : <span style="color:#ffffff;">hasnaa.chemsi</span>@gmail.com<br><br>
+                    <p style="color:#83B041;font-weight: bold;letter-spacing: 1px;">Suivez nous sur :</p>
+                </p>
+                <div class="iconBox">
+                    <a href="https://wa.me/212701260887?text=bonjour" target="_blank"><ion-icon name="logo-whatsapp" ></ion-icon></a>
+                    <a href="https://www.instagram.com/dr.hasnaachemsi/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.youtube.com/channel/UCn5X4iNgLAO260yvnjESuow" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                    <a href="https://www.facebook.com/Dr.Chemsi/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/dr-hasn%C3%A2a-chemsi-b1b652127" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d44078.47805837659!2d-7.673192580269687!3d33.58440566169001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%3A%20quartier%20des%20h%C3%B4pitaux%2C%20casa%20!5e0!3m2!1sfr!2sma!4v1650523220005!5m2!1sfr!2sma"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            </div>    
+        </div>
+        <div class="signature">
+            <a href="https://www.linkedin.com/in/sohaib-soussi-034216212/" target="_blank">©SOHAIBSOUSSIPRODUCTION</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
