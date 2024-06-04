@@ -316,32 +316,21 @@
             <p>Réserver un RDV</p>
         </a>
     </div>
-    <footer id="footer">
-        <div class="container">
-            <div class="container2">
-                <p>
-                    <span style="color:#83B041;font-weight: bold;letter-spacing: 1px;display: block;">Coordonées :</span><br>
-                    <ion-icon name="call-outline" style="color:#0d6369;margin-bottom: -3px;"></ion-icon> : <span style="color:#ffffff;">(+212)&nbsp;701260887&nbsp;</span><br><span class="space" style="color:#ffffff">&nbsp;(+212)&nbsp;522865093</span><br>
-                    <ion-icon name="location-outline"style="color:#0d6369;margin-bottom: -3px;" ></ion-icon> : Rue Abou alaa zahr, quartier des hôpitaux,<br><span class="space2" style="color:#ffffff">Casablanca</span><br>
-                    <ion-icon name="mail-outline"style="color:#0d6369;margin-bottom: -3px;"></ion-icon> : <span style="color:#ffffff;">hasnaa.chemsi</span>@gmail.com<br><br>
-                    <p style="color:#83B041;font-weight: bold;letter-spacing: 1px;">Suivez nous sur :</p>
-                </p>
-                <div class="iconBox">
-                    <a href="https://wa.me/212701260887?text=bonjour" target="_blank"><ion-icon name="logo-whatsapp" ></ion-icon></a>
-                    <a href="https://www.instagram.com/dr.hasnaachemsi/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-                    <a href="https://www.youtube.com/channel/UCn5X4iNgLAO260yvnjESuow" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
-                    <a href="https://www.facebook.com/Dr.Chemsi/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a href="https://www.linkedin.com/in/dr-hasn%C3%A2a-chemsi-b1b652127" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-                </div>
-            </div>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d44078.47805837659!2d-7.673192580269687!3d33.58440566169001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%3A%20quartier%20des%20h%C3%B4pitaux%2C%20casa%20!5e0!3m2!1sfr!2sma!4v1650523220005!5m2!1sfr!2sma"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-            </div>    
-        </div>
-        <div class="signature">
-            <a href="https://www.linkedin.com/in/sohaib-soussi-034216212/" target="_blank">©SOHAIBSOUSSIPRODUCTION</a>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
+    <script>
+        // Function to load the footer component
+        function loadFooter() {
+          fetch('../footer.html')
+            .then(response => response.text())
+            .then(data => {
+              console.log(data)
+              document.getElementById('footer-placeholder').innerHTML = data;
+            });
+        }
+    
+        // Call the function to load the footer component
+        loadFooter();
+    </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     
